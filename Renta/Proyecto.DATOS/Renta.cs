@@ -16,5 +16,7 @@ namespace Proyecto.DATOS
         public int IDEmpleado { get; set; }
         public DateTime FechaEntrega { get; set; }
         public DateTime FechaDevolucion { get; set; }
+        public DateTime fecha { get; set; }
+
     }
 }
