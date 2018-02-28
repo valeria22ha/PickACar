@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using ServiceStack.OrmLite;
 using System.Data;
+
+
 namespace Lec03.DAL.Metodos
 {
     public class MBase
     {
         public OrmLiteConnectionFactory _conexion;
         public IDbConnection _db;
-
+        
 
         public MBase()
         {
