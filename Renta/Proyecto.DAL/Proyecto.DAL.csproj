@@ -50,6 +50,17 @@
     <Compile Include="Interfaces\IRenta.cs" />
     <Compile Include="Interfaces\ISeguro.cs" />
     <Compile Include="Interfaces\IVehiculo.cs" />
+    <Compile Include="Metodos\MBase.cs" />
+    <Compile Include="Metodos\MCliente.cs" />
+    <Compile Include="Metodos\MEmpleado.cs" />
+    <Compile Include="Metodos\MFactura.cs" />
+    <Compile Include="Metodos\MLugarEntregaC.cs" />
+    <Compile Include="Metodos\MMarca.cs" />
+    <Compile Include="Metodos\MMecanico.cs" />
+    <Compile Include="Metodos\MProveedor.cs" />
+    <Compile Include="Metodos\MRenta.cs" />
+    <Compile Include="Metodos\MSeguro.cs" />
+    <Compile Include="Metodos\MVehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -64,9 +75,7 @@
       <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Metodos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Proyecto.DATOS\Proyecto.DATOS.csproj">
       <Project>{3fb0d54c-c5e2-44de-bd62-1c5bd32f1b5d}</Project>
