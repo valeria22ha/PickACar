@@ -71,11 +71,20 @@
     <Compile Include="Interfaces\IRenta.cs" />
     <Compile Include="Interfaces\ISeguro.cs" />
     <Compile Include="Interfaces\IVehiculo.cs" />
+    <Compile Include="Metodos\MBase.cs" />
+    <Compile Include="Metodos\MCliente.cs" />
+    <Compile Include="Metodos\MEmpleado.cs" />
+    <Compile Include="Metodos\MFactura.cs" />
+    <Compile Include="Metodos\MLugarEntregaC.cs" />
+    <Compile Include="Metodos\MMarca.cs" />
+    <Compile Include="Metodos\MMecanico.cs" />
+    <Compile Include="Metodos\MProveedor.cs" />
+    <Compile Include="Metodos\MRenta.cs" />
+    <Compile Include="Metodos\MSeguro.cs" />
+    <Compile Include="Metodos\MVehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Metodos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
