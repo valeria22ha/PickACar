@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ServiceStack.OrmLite;
 using System.Data;
-
+using Proyecto.DAL;
 
 namespace Lec03.DAL.Metodos
 {
@@ -17,7 +17,7 @@ namespace Lec03.DAL.Metodos
 
         public MBase()
         {
-            _conexion = new OrmLiteConnectionFactory(BD.Default.conexion,
+            _conexion = new OrmLiteConnectionFactory(BD.Default.Conexion,
                 SqlServerDialect.Provider);
             _db = _conexion.Open();
         }
