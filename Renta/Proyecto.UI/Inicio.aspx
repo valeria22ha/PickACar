@@ -21,7 +21,7 @@
                         <asp:Label ID="Label2" runat="server" Text="Modelo"></asp:Label>
                         <asp:DropDownList ID="ddlModelo" runat="server" CssClass="form-control"></asp:DropDownList>
                         <br />
-                        <asp:Button ID="btnBuscarMM" runat="server" Text="Buscar" CssClass="btn btn-default"/>
+                        <asp:Button ID="btnBuscarMM" runat="server" Text="Buscar" CssClass="btn btn-default" OnClick="btnBuscarMM_Click"/>
                     </div>
                     <div id="Precio" class="tab-pane fade">
                         <asp:Label ID="Label3" runat="server" Text="Precio Mínimo"></asp:Label>
@@ -29,7 +29,7 @@
                         <asp:Label ID="L" runat="server" Text="Precio Máximo"></asp:Label>
                         <asp:TextBox ID="tbMaximo" runat="server" CssClass="form-control"></asp:TextBox>
                         <br />
-                        <asp:Button ID="btnBuscarP" runat="server" Text="Buscar" CssClass="btn btn-default"/>
+                        <asp:Button ID="btnBuscarP" runat="server" Text="Buscar" CssClass="btn btn-default" OnClick="btnBuscarP_Click"/>
                     </div>
                 </div>
             </div>

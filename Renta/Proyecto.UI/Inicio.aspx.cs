@@ -13,5 +13,15 @@ namespace Proyecto.UI
         {
 
         }
+
+        protected void btnBuscarP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnBuscarMM_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
