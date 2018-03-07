@@ -14,9 +14,9 @@ namespace Proyecto.DATOS
         public int IDMecanico { get; set; }
         public int IDProveedor { get; set; }
         public int Precio { get; set; }
-        public string Combustible { get; set; }
-        public int NumeroPuertas { get; set; }
-        public string Transmicion { get; set; }
-        public string Traccion { get; set; }
+        public int IDCombustible { get; set; }
+        public int IDNumeroPuertas { get; set; }
+        public int IDTransmicion { get; set; }
+        public int IDTraccion { get; set; }
     }
 }

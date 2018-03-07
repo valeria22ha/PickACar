@@ -18,6 +18,12 @@ namespace Proyecto.BLL.Metodos
         public DAL.Interfaces.IRenta rent;
         public DAL.Interfaces.ISeguro segu;
         public DAL.Interfaces.IVehiculo vehi;
+        public DAL.Interfaces.IEstilo esti;
+        public DAL.Interfaces.ICombustible combu;
+        public DAL.Interfaces.IPuertas puer;
+        public DAL.Interfaces.ITraccion tracc;
+        public DAL.Interfaces.ITransmicion trans;
+        
 
         public MBase()
         {
@@ -31,6 +37,13 @@ namespace Proyecto.BLL.Metodos
             rent = new DAL.Metodos.MRenta();
             segu = new DAL.Metodos.MSeguro();
             vehi = new DAL.Metodos.MVehiculo();
+            esti = new DAL.Metodos.MEstilo();
+            combu = new DAL.Metodos.MCombustible();
+            puer = new DAL.Metodos.MPuertas();
+            tracc = new DAL.Metodos.MTraccion();
+            trans = new DAL.Metodos.MTransmicion();
+
+            
         }
     }
 }
