@@ -49,3 +49,4 @@ C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.UI\obj\Debug\Proye
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.UI\obj\Debug\Proyecto.UI.csproj.CoreCompileInputs.cache
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.UI\obj\Debug\Proyecto.UI.dll
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.UI\obj\Debug\Proyecto.UI.pdb
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.UI\obj\Debug\Proyecto.UI.csproj.CopyComplete

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="Proyecto.UI.Inicio" %>
+﻿<%@ Page Title="PickACar" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="Proyecto.UI.Inicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <head>
         <link rel="stylesheet" href="Content/Inicio.css" />
