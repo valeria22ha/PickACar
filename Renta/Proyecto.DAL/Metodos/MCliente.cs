@@ -7,6 +7,7 @@ using Proyecto.DATOS;
 using Proyecto.DAL.Interfaces;
 using System.Data;
 using Lec03.DAL.Metodos;
+using Proyecto.DAL.Metodos;
 using ServiceStack.OrmLite;
 
 namespace Proyecto.DAL.Metodos

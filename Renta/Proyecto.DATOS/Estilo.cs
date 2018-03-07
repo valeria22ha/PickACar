@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Proyecto.DATOS
 {
-    class Estilo
+    public class Estilo
     {
+        [AutoIncrement]
+        public int IdEs { get; set; }
+        public string tipoEstilo { get; set; }
     }
 }
