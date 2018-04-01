@@ -17,6 +17,6 @@ namespace Proyecto.BLL.Interfaces
 
         void ActualizarCombustible(Combustible combustible);
 
-        void EliminarCombustible(Combustible idCombustible);
+        void EliminarCombustible(int idCombustible);
     }
 }

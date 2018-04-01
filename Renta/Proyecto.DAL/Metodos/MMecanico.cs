@@ -19,14 +19,13 @@ namespace Proyecto.DAL.Metodos
 
         public Mecanico BuscarMecanico(int idMecanico)
         {
-            return _db.Select<Mecanico>(x => x.IDMe == idMecanico)
+            return _db.Select<Mecanico>(x => x.ID == idMecanico)
                 .FirstOrDefault();
         }
 
         public void EliminarMecanico(int idMecanico)
         {
-            _db.Delete<Mecanico>(x => x.IDMe
-            == idMecanico);
+            _db.Delete<Mecanico>(x => x.ID == idMecanico);
         }
 
         public void InsertarMecanico(Mecanico mecanico)

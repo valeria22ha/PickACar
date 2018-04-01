@@ -19,13 +19,13 @@ namespace Proyecto.DAL.Metodos
 
         public Combustible BuscarCobustible(int idCombustible)
         {
-            return _db.Select<Combustible>(x => x.IDCom== idCombustible)
+            return _db.Select<Combustible>(x => x.ID == idCombustible)
                 .FirstOrDefault();
         }
 
-        public void EliminarCombustible(Combustible idCombustible)
+        public void EliminarCombustible(int idCombustible)
         {
-            _db.Delete<Combustible>(x => x.IDCom == idCombustible);
+            _db.Delete<Combustible>(x => x.ID == idCombustible);
         }
 
         public void InsertarCombustible(Combustible combustible)

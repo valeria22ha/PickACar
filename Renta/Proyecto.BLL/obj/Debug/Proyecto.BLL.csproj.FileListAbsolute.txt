@@ -1,0 +1,2 @@
+C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CoreCompileInputs.cache

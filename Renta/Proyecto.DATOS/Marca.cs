@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceStack.DataAnnotations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,7 @@ namespace Proyecto.DATOS
     public class Marca
     {
         [AutoIncrement]
-        public int IDMa { get; set; }
+        public int ID { get; set; }
         public string Nombre { get; set; }
-        public string Estilo { get; set; }
-
-
-
     }
 }

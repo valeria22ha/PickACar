@@ -19,7 +19,7 @@ namespace Proyecto.DAL.Metodos
 
         public Factura BuscarFactura(int idFactura)
         {
-            return _db.Select<Factura>(x => x.IDF == idFactura)
+            return _db.Select<Factura>(x => x.ID == idFactura)
                 .FirstOrDefault();
         
     }

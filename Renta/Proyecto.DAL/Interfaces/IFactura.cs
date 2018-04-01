@@ -11,7 +11,7 @@ namespace Proyecto.DAL.Interfaces
     {
         List<Factura> ListarFacturas();
 
-       Factura BuscarFactura(int idFactura);
+        Factura BuscarFactura(int idFactura);
 
         void InsertarFactura(Factura factura);
 

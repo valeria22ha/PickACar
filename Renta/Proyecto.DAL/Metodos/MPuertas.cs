@@ -19,14 +19,13 @@ namespace Proyecto.DAL.Metodos
 
         public Puertas BuscarPuertas(int idPuerta)
         {
-            return _db.Select<Puertas>(x => x.IDPuer == idPuerta)
+            return _db.Select<Puertas>(x => x.ID == idPuerta)
                 .FirstOrDefault();
         }
 
         public void EliminarPuertas(int idPuerta)
         {
-            _db.Delete<Puertas>(x => x.IDPuer
-            == idPuerta);
+            _db.Delete<Puertas>(x => x.ID == idPuerta);
         }
 
         public void InsertarPuertas(Puertas puerta)

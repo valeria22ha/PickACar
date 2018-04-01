@@ -23,6 +23,7 @@ namespace Proyecto.BLL.Metodos
         public DAL.Interfaces.IPuertas puer;
         public DAL.Interfaces.ITraccion tracc;
         public DAL.Interfaces.ITransmicion trans;
+        public DAL.Interfaces.IModelo mode;
         
 
         public MBase()
@@ -42,8 +43,7 @@ namespace Proyecto.BLL.Metodos
             puer = new DAL.Metodos.MPuertas();
             tracc = new DAL.Metodos.MTraccion();
             trans = new DAL.Metodos.MTransmicion();
-
-            
+            mode = new DAL.Metodos.MModelo();
         }
     }
 }

@@ -19,14 +19,12 @@ namespace Proyecto.DAL.Metodos
 
         public Transmicion BuscarTransmicion(int idTransmicion)
         {
-            return _db.Select<Transmicion>(x => x.IDTrans == idTransmicion)
-               .FirstOrDefault();
+            return _db.Select<Transmicion>(x => x.ID == idTransmicion).FirstOrDefault();
         }
 
         public void EliminarTransmicion(int idTransmicion)
         {
-            _db.Delete<Transmicion>(x => x.IDTrans
-            == idTransmicion);
+            _db.Delete<Transmicion>(x => x.ID == idTransmicion);
         }
 
         public void InsertarTransmicion(Transmicion transmicion)

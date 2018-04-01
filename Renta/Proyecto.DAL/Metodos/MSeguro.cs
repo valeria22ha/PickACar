@@ -19,14 +19,13 @@ namespace Proyecto.DAL.Metodos
 
         public Seguro BuscarSeguro(int idSeguro)
         {
-            return _db.Select<Seguro>(x => x.IDSe == idSeguro)
+            return _db.Select<Seguro>(x => x.ID == idSeguro)
                 .FirstOrDefault();
         }
 
         public void EliminarSeguro(int idSeguro)
         {
-            _db.Delete<Seguro>(x => x.IDSe
-            == idSeguro);
+            _db.Delete<Seguro>(x => x.ID == idSeguro);
         }
 
         public void InsertarSeguro(Seguro seguro)
