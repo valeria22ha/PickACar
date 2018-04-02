@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿ using AutoMapper;
 using Proyecto.DAL.Interfaces;
 using Proyecto.DAL.Metodos;
 using System;
@@ -24,7 +24,7 @@ namespace Proyecto.GUI.Controllers
         public ActionResult Index()
         {
             var listaVehiculos = vehi.ListarVehiculos();
-            var vehiculosListaFinal = Mapper.Map<List<Proyecto.GUI.Models.Vehiculo>>(listaVehiculos);
+            var vehiculosListaFinal = Mapper.Map<List<Models.Vehiculo>>(listaVehiculos);
 
             var listaModelos = mode.ListarModelo();
             var modelosListaFinal = Mapper.Map<List<Proyecto.GUI.Models.Modelo>>(listaModelos);
@@ -32,6 +32,26 @@ namespace Proyecto.GUI.Controllers
             ViewData["Vehiculos"] = vehiculosListaFinal;
             ViewData["Modelos"] = modelosListaFinal;
 
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult VerDisponibles(string fechaEntr, string fechaDev)
+        {
+            //hacer validacion de disponibles
+            var listaVehiculos = vehi.ListarVehiculos();
+            var vehiculosListaFinal = Mapper.Map<List<Models.Vehiculo>>(listaVehiculos);
+
+            var listaModelos = mode.ListarModelo();
+            var modelosListaFinal = Mapper.Map<List<Proyecto.GUI.Models.Modelo>>(listaModelos);
+
+            List<string> listaFechas = new List<string>();
+            listaFechas.Add(fechaEntr);
+            listaFechas.Add(fechaDev);
+
+            ViewData["Vehiculos"] = vehiculosListaFinal;
+            ViewData["Modelos"] = modelosListaFinal;
+            ViewData["Fechas"] = listaFechas;
             return View();
         }
     }

@@ -35,7 +35,7 @@ namespace Proyecto.DAL.Metodos
 
         public List<Vehiculo> ListarVehiculos()
         {
-            return _db.Select<Vehiculo>();
+            return _db.Select<Vehiculo>();//aqu
         }
     }
 }

@@ -1,4 +1,8 @@
-﻿using System;
+﻿using AutoMapper;
+using Proyecto.DAL.Interfaces;
+using Proyecto.DAL.Metodos;
+using Proyecto.DATOS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +12,13 @@ namespace Proyecto.GUI.Controllers
 {
     public class HomeController : Controller
     {
+        ILugarEntregaC lugar;
+
+        public HomeController()
+        {
+            lugar = new MLugarEntregaC();
+        }
+
         public ActionResult Index()
         {
             return View();

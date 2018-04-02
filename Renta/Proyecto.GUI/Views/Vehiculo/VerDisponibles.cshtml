@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Ver Disponibles";
+
+    IEnumerable<Proyecto.GUI.Models.Vehiculo> listaVehiculos = ViewData["Vehiculos"] as IEnumerable<Proyecto.GUI.Models.Vehiculo>;
+
+    IEnumerable<Proyecto.GUI.Models.Modelo> listaModelos = ViewData["Vehiculos"] as IEnumerable<Proyecto.GUI.Models.Modelo>;
+
+    List<string> listaFechas = ViewData["Fechas"] as List<string>;
+    string fechaEntr = String.Empty;
+    string fechaDev = String.Empty;
+    int i = 0;
+    foreach (var item in listaFechas)
+    {
+        if (i == 0)
+        {
+            fechaEntr = item;
+        }
+        else
+        {
+            fechaDev = item;
+        }
+        i++;
+    }
+}
+
+<h2>Carros que puedes rentar:</h2>
+<h4>Esto dado que escogiste las fechas de entrega: </h4>
+<div style="position: absolute; width: 70%; left: 15%; height:100%;" class="table-bordered">
+    @foreach (var carro in listaVehiculos)
+    {
+    <div style="float: left; width:33%; height:40%;" class="table-bordered">
+        <p style="text-align:center;">Placa: <b>@carro.ID</b></p>
+        @{
+        Proyecto.DATOS.Modelo mod = new Proyecto.DATOS.Modelo();
+        foreach (var modelo in listaModelos)
+        {
+            if (modelo.ID == carro.IDModelo)
+            {
+                mod.ID = modelo.ID;
+                mod.Descripcion = modelo.Descripcion;
+                mod.Imagen = modelo.Imagen;
+                mod.IDCombustible = modelo.IDCombustible;
+                mod.IDEstilo = modelo.IDEstilo;
+                mod.IDMarca = modelo.IDMarca;
+                mod.IDNumeroPuertas = mod.IDNumeroPuertas;
+                mod.IDTraccion = mod.IDTraccion;
+                mod.IDTransmicion = mod.IDTransmicion;
+            }
+        }
+        }
+        <img src="@mod.Imagen" style="position:absolute; width:70%; height: 80%; left:15%;" />
+        @Html.ActionLink("Rentar", "RegistraRenta", "Renta", carro.ID, "1", fechaEntr, fechaDev, null)
+    </div>
+    }
+</div>

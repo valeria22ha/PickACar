@@ -14,7 +14,7 @@ namespace Proyecto.GUI.Controllers
             return View();
         }
 
-        public ActionResult RegistrarRenta()
+        public ActionResult RegistrarRenta(string idVehiculo, string idCliente, string fechaEntr, string fechaDev)
         {
             return View();
         }

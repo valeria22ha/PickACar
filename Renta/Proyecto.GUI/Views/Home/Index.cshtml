@@ -1,31 +1,42 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<style>
+    #boton {
+        background-color: rgb(0,0,0);
+        color: rgb(255, 255, 255);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 12px;
+        transition-duration: 0.5s;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    #boton:hover {
+        background-color: rgb(0, 148, 255);
+        color: rgb(0, 0, 0);
+   }
+</style>
+<div style="position: absolute; width: 40%; height: 40%; left: 30%; top: 25%; background-color: rgba(0, 0, 0,0.6); border-radius: 10%;">
+    <br />
+    <h2 style="color:white; text-align:center;"> Renta el auto que necesites!</h2>
+    @using (Html.BeginForm("VerDisponibles","Vehiculo", FormMethod.Post))
+    {
+    <div style="position: absolute; left: 10%; top: 25%;">
+        <h3 style="color:white; text-align:center; font-size: 30px;">Inicio</h3>
+        <input type="date" class="form-control" id="fechaEntr" name="fechaEntr">
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+        <div style="position: absolute; left: 70%; top: 25%;">
+            <h3 style="color:white; text-align:center; font-size: 30px;">Fin</h3>
+            <input type="date" class="form-control" id="fechaDev" name="fechaDev">
+        </div>
+        <div style="position: absolute; left: 42%; top: 70%;">
+            <input type="submit" value="Buscar" style="" />
+        </div>
+    }
 </div>
