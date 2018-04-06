@@ -9,11 +9,6 @@ C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\b
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\System.Runtime.Serialization.Primitives.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.Interfaces.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.Common.xml
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.OrmLite.xml
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.OrmLite.SqlServer.xml
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.Text.xml
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.Interfaces.xml
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete

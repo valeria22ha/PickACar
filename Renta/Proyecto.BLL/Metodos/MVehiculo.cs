@@ -15,12 +15,12 @@ namespace Proyecto.BLL.Metodos
             vehi.ActualizarVehiculo(vehiculo);
         }
 
-        public Vehiculo BuscarVehiculo(int idVehiculo)
+        public Vehiculo BuscarVehiculo(string idVehiculo)
         {
             return vehi.BuscarVehiculo(idVehiculo);
         }
 
-        public void EliminarVehiculo(int idVehiculo)
+        public void EliminarVehiculo(string idVehiculo)
         {
             vehi.EliminarVehiculo(idVehiculo);
         }

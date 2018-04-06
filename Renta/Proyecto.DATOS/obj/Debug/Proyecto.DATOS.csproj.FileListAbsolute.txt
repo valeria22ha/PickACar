@@ -4,14 +4,8 @@ C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Common.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Interfaces.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.OrmLite.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.OrmLite.Oracle.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Text.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Common.xml
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Interfaces.xml
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.OrmLite.xml
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.OrmLite.SqlServer.xml
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Text.xml
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csprojResolveAssemblyReference.cache
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CoreCompileInputs.cache
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CopyComplete

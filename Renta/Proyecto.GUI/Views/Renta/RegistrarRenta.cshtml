@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "RegistrarRenta";
+    Proyecto.GUI.Models.Modelo modelo = ViewData["modelo"] as Proyecto.GUI.Models.Modelo;
+}
+
+<div style="position:fixed; width:100%; height:100%; left:0%; background-color:rgba(0, 0, 0,0.4); z-index:-1;"></div>
+
+<h1 style="color:white; position:absolute; left:10%; top:5%;">Registrar renta</h1>
+
+<div style="position:fixed; width:80%; height:68%; left:10%; top:17% ; background-color:rgba(0, 0, 0,0.6); z-index:-1;">
+    <div id="imagen" style="position:absolute; top:5%; left: 2%; width: 40%; height: 90%;">
+        <img src="@modelo.Imagen" style="position:relative; width:100%; height:100%;" />
+    </div>
+    <div id="divisor" style="position:absolute; top:5%; left: 45%; width: 1%; height: 90%; background:rgb(255,255,255);">
+    </div>
+</div>

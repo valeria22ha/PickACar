@@ -60,13 +60,24 @@
       <HintPath>..\packages\ServiceStack.Client.5.0.2\lib\net45\ServiceStack.Client.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Common.Signed.4.5.14\lib\net45\ServiceStack.Common.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Documents\U\VI C\Progra V\lecciones\Semana 11-20180329\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Interfaces.5.0.2\lib\net45\ServiceStack.Interfaces.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Documents\U\VI C\Progra V\lecciones\Semana 11-20180329\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Documents\U\VI C\Progra V\lecciones\Semana 11-20180329\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Documents\U\VI C\Progra V\lecciones\Semana 11-20180329\ServiceStack.OrmLite.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Text.Signed.4.5.14\lib\net45\ServiceStack.Text.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Documents\U\VI C\Progra V\lecciones\Semana 11-20180329\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -229,15 +240,14 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Vehiculo\Index.cshtml" />
     <Content Include="Views\Vehiculo\VerDisponibles.cshtml" />
+    <Content Include="Views\Renta\RegistrarRenta.cshtml" />
+    <Content Include="Views\Home\IndexError.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Renta\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -253,6 +263,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Proyecto.BLL\Proyecto.BLL.csproj">
+      <Project>{17d2cab8-236f-46ad-a4c3-0d8a381e410b}</Project>
+      <Name>Proyecto.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Proyecto.DAL\Proyecto.DAL.csproj">
       <Project>{4359116C-AE90-445A-953F-0D20ECD87462}</Project>
       <Name>Proyecto.DAL</Name>

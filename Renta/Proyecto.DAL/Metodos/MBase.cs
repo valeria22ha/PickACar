@@ -14,12 +14,11 @@ namespace Lec03.DAL.Metodos
         public OrmLiteConnectionFactory _conexion;
         public IDbConnection _db;
         
-
         public MBase()
         {
-            _conexion = new OrmLiteConnectionFactory(BD.Default.Conexion,
-                SqlServerDialect.Provider);
-            _db = _conexion.Open();
+                _conexion = new OrmLiteConnectionFactory(BD.Default.Conexion,
+               SqlServerDialect.Provider);
+                _db = _conexion.Open();
         }
     }
 }

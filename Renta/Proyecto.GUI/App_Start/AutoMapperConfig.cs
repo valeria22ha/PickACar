@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Proiecto.GUI.App_Start
+namespace Proyecto.GUI
 {
     public class AutoMapperConfig
     {

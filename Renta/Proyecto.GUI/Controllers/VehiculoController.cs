@@ -1,6 +1,6 @@
-﻿ using AutoMapper;
-using Proyecto.DAL.Interfaces;
-using Proyecto.DAL.Metodos;
+﻿using AutoMapper;
+using Proyecto.BLL.Interfaces;
+using Proyecto.BLL.Metodos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +13,15 @@ namespace Proyecto.GUI.Controllers
     {
         IVehiculo vehi;//se usan los de DAL
         IModelo mode;
+        IMarca marc;
+        IRenta rent;
 
         public VehiculoController()
         {
             vehi = new MVehiculo();
             mode = new MModelo();
+            marc = new MMarca();
+            rent = new MRenta();
         }
 
         // GET: Vehiculo
@@ -34,25 +38,57 @@ namespace Proyecto.GUI.Controllers
 
             return View();
         }
-
-        [HttpPost]
+        
         public ActionResult VerDisponibles(string fechaEntr, string fechaDev)
         {
-            //hacer validacion de disponibles
-            var listaVehiculos = vehi.ListarVehiculos();
-            var vehiculosListaFinal = Mapper.Map<List<Models.Vehiculo>>(listaVehiculos);
+            try
+            {
+                DateTime fechaE = Convert.ToDateTime(fechaEntr);
+                DateTime fechaD = Convert.ToDateTime(fechaDev);
+                if (fechaE.CompareTo(DateTime.Now) > 0)
+                {
+                    if (fechaE.CompareTo(fechaD) <= 0)
+                    {
+                        //hacer validacion de disponibles
+                        var listaVehiculos = vehi.ListarVehiculos();
+                        var vehiculosListaFinal = Mapper.Map<List<Models.Vehiculo>>(listaVehiculos);
 
-            var listaModelos = mode.ListarModelo();
-            var modelosListaFinal = Mapper.Map<List<Proyecto.GUI.Models.Modelo>>(listaModelos);
+                        var listaModelos = mode.ListarModelo();
+                        var modelosListaFinal = Mapper.Map<List<Proyecto.GUI.Models.Modelo>>(listaModelos);
 
-            List<string> listaFechas = new List<string>();
-            listaFechas.Add(fechaEntr);
-            listaFechas.Add(fechaDev);
+                        var listaMarcas = marc.ListarMarcas();
+                        var marcasListaFinal = Mapper.Map<List<Models.Marca>>(listaMarcas);
 
-            ViewData["Vehiculos"] = vehiculosListaFinal;
-            ViewData["Modelos"] = modelosListaFinal;
-            ViewData["Fechas"] = listaFechas;
-            return View();
+                        var listaRentas = rent.ListarRentas();
+                        var rentasListaFinal = Mapper.Map<List<Models.Renta>>(listaRentas);
+
+                        List<string> listaFechas = new List<string>();
+                        listaFechas.Add(fechaEntr);
+                        listaFechas.Add(fechaDev);
+
+                        ViewData["Vehiculos"] = vehiculosListaFinal;
+                        ViewData["Modelos"] = modelosListaFinal;
+                        ViewData["Marca"] = marcasListaFinal;
+                        ViewData["Rentas"] = rentasListaFinal;
+                        ViewData["Fechas"] = listaFechas;
+
+                        return View();
+                    }
+                    else
+                    {
+                        return RedirectToAction("IndexError", "Home");
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("IndexError", "Home");
+                }
+            } catch (Exception e)
+            {
+                return RedirectToAction("IndexError", "Home", new { mensaje = e.Message});
+
+            }
+            
         }
     }
 }
