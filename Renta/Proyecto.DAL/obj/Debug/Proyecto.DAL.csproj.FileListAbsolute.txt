@@ -14,3 +14,14 @@ C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\o
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.config
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.pdb
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.dll
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.pdb
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb

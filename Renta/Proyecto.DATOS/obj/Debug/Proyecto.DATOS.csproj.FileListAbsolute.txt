@@ -11,3 +11,11 @@ C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CopyComplete
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.pdb
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.dll
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.pdb
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csprojResolveAssemblyReference.cache
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CopyComplete
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.dll
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.pdb
