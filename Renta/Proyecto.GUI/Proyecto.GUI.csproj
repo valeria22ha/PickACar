@@ -180,6 +180,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddVehiculeController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Controllers\FacturasController.cs" />
@@ -192,6 +193,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AddVehicule.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Combustible.cs" />
     <Compile Include="Models\Empleado.cs" />
@@ -319,6 +321,9 @@
     <Content Include="Views\Proveedor\Edit.cshtml" />
     <Content Include="Views\Proveedor\Delete.cshtml" />
     <Content Include="Views\Proveedor\Details.cshtml" />
+    <Content Include="Views\Vehiculo\Create.cshtml" />
+    <Content Include="Views\AddVehicule\Create.cshtml" />
+    <Content Include="Views\AddVehicule\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

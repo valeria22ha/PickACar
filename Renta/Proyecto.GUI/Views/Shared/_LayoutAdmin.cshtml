@@ -8,27 +8,30 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Carros", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Clientes", "Index", "Cliente")</li>
-                    <li>@Html.ActionLink("Empleados", "Index", "Empleado")</li>
-                    <li>@Html.ActionLink("Proveedor", "Index", "Proveedor")</li>
-                    <li>@Html.ActionLink("Mecánico", "Index", "Mecanico")</li>
-                    <li>@Html.ActionLink("Facturas", "Index", "Facturas")</li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    @Html.ActionLink("Carros", "Index", "Home")
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Clientes", "Index", "Cliente")
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Empleados", "Index", "Empleado")
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Proveedor", "Index", "Proveedor")
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Mecánico", "Index", "Mecanico")
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Facturas", "Index", "Facturas")
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
     <div class="container body-content">
         @RenderBody()
 
@@ -39,3 +42,5 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+

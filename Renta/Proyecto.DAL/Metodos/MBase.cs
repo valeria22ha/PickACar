@@ -20,5 +20,6 @@ namespace Lec03.DAL.Metodos
                SqlServerDialect.Provider);
                 _db = _conexion.Open();
         }
+
     }
 }

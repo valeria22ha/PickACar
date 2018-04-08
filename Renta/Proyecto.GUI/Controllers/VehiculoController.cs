@@ -90,5 +90,13 @@ namespace Proyecto.GUI.Controllers
             }
             
         }
+
+        // GET: Cliente/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        
     }
 }
