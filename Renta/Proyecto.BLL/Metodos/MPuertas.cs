@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MPuertas : MBase, IPuertas
+    public class MPuertas : IPuertas
     {
+        public DAL.Interfaces.IPuertas puer;
+        public MPuertas()
+        {
+            puer = new DAL.Metodos.MPuertas();
+        }
         public void ActualizarPuertas(Puertas puerta)
         {
             puer.ActualizarPuertas(puerta);

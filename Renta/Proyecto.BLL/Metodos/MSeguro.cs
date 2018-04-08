@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MSeguro : MBase, ISeguro
+    public class MSeguro : ISeguro
     {
+        public DAL.Interfaces.ISeguro segu;
+        public MSeguro()
+        {
+            segu = new DAL.Metodos.MSeguro();
+        }
         public void ActualizarSeguro(Seguro seguro)
         {
             segu.ActualizarSeguro(seguro);

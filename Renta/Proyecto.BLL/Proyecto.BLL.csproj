@@ -74,7 +74,6 @@
     <Compile Include="Interfaces\ITraccion.cs" />
     <Compile Include="Interfaces\ITransmicion.cs" />
     <Compile Include="Interfaces\IVehiculo.cs" />
-    <Compile Include="Metodos\MBase.cs" />
     <Compile Include="Metodos\MCliente.cs" />
     <Compile Include="Metodos\MCombustible.cs" />
     <Compile Include="Metodos\MEmpleado.cs" />

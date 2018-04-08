@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MTraccion : MBase, ITraccion
+    public class MTraccion :  ITraccion
     {
+        public DAL.Interfaces.ITraccion tracc;
+        public MTraccion()
+        {
+            tracc = new DAL.Metodos.MTraccion();
+        }
         public void ActualizarTraccion(Traccion traccion)
         {
             tracc.ActualizarTraccion(traccion);

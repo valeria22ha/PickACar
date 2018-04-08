@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MVehiculo : MBase, IVehiculo
+    public class MVehiculo : IVehiculo
     {
+        public DAL.Interfaces.IVehiculo vehi;
+        public MVehiculo()
+        {
+            vehi = new DAL.Metodos.MVehiculo();
+        }
         public void ActualizarVehiculo(Vehiculo vehiculo)
         {
             vehi.ActualizarVehiculo(vehiculo);

@@ -8,8 +8,14 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MCliente : MBase, ICliente
+    public class MCliente :  ICliente
     {
+        public DAL.Interfaces.ICliente clie;
+
+        public MCliente()
+        {
+            clie = new DAL.Metodos.MCliente();
+        }
         public void ActualizarCliente(Cliente cliente)
         {
             clie.ActualizarCliente(cliente);

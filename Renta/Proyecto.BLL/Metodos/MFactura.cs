@@ -8,8 +8,14 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MFactura : MBase, IFactura
+    public class MFactura :  IFactura
     {
+        public DAL.Interfaces.IFactura fact;
+
+        public MFactura()
+        {
+            fact = new DAL.Metodos.MFactura();
+        }
         public void ActualizarFactura(Factura factura)
         {
             fact.ActualizarFactura(factura);

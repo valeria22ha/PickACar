@@ -8,8 +8,13 @@ using System.Threading.Tasks;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MModelo : MBase, IModelo
+    public class MModelo : IModelo
     {
+        public DAL.Interfaces.IModelo mode;
+        public MModelo()
+        {
+            mode = new DAL.Metodos.MModelo();
+        }
         public void ActualizarModelo(Modelo modelo)
         {
             mode.ActualizarModelo(modelo);

@@ -8,8 +8,14 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MLugarEntregaC : MBase, ILugarEntregaC
+    public class MLugarEntregaC :  ILugarEntregaC
     {
+
+        public DAL.Interfaces.ILugarEntregaC luga;
+        public MLugarEntregaC()
+        {
+            luga = new DAL.Metodos.MLugarEntregaC();
+        }
         public void ActualizarLugar(LugarEntregaC lugar)
         {
             luga.ActualizarLugar(lugar);

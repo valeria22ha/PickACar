@@ -8,8 +8,14 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MMecanico : MBase, IMecanico
+    public class MMecanico :  IMecanico
     {
+        public DAL.Interfaces.IMecanico meca;
+        public MMecanico()
+        {
+            meca = new DAL.Metodos.MMecanico();
+
+        }
         public void ActualizarMecanico(Mecanico mecanico)
         {
             meca.ActualizarMecanico(mecanico);

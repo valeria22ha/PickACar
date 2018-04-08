@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MProveedor : MBase, IProveedor
+    public class MProveedor : IProveedor
     {
+        public DAL.Interfaces.IProveedor prove;
+        public MProveedor()
+        {
+            prove = new DAL.Metodos.MProveedor();
+        }
         public void ActualizarProveedor(Proveedor proveedor)
         {
             prove.ActualizarProveedor(proveedor);

@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MRenta : MBase, IRenta
+    public class MRenta :  IRenta
     {
+        public DAL.Interfaces.IRenta rent;
+        public MRenta()
+        {
+            rent = new DAL.Metodos.MRenta();
+        }
         public void ActualizarRenta(Renta renta)
         {
             rent.ActualizarRenta(renta);

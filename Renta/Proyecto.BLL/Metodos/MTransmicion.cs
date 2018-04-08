@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MTransmicion : MBase, ITransmicion
+    public class MTransmicion : ITransmicion
     {
+        public DAL.Interfaces.ITransmicion trans;
+        public MTransmicion()
+        {
+            trans = new DAL.Metodos.MTransmicion();
+        }
         public void ActualizarTransmicion(Transmicion transmicion)
         {
             trans.ActualizarTransmicion(transmicion);

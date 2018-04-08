@@ -8,8 +8,14 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MEmpleado : MBase, IEmpleado
+    public class MEmpleado :  IEmpleado
     {
+        public DAL.Interfaces.IEmpleado emple;
+        
+        public MEmpleado()
+        {
+            emple = new DAL.Metodos.MEmpleado();
+        }
         public void ActualizarEmpleado(Empleado empleado)
         {
             emple.ActualizarEmpleado(empleado);

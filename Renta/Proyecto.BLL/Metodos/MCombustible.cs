@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MCombustible : MBase, ICombustible
+    public class MCombustible : ICombustible
     {
+        public DAL.Interfaces.ICombustible combu;
+        public MCombustible()
+        {
+            combu = new DAL.Metodos.MCombustible();
+        }
         public void ActualizarCombustible(Combustible combustible)
         {
             combu.ActualizarCombustible(combustible);

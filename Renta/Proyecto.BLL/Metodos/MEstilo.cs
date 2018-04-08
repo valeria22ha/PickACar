@@ -8,8 +8,14 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MEstilo : MBase, IEstilo
+    public class MEstilo :  IEstilo
     {
+        public DAL.Interfaces.IEstilo esti;
+
+        public MEstilo()
+        {
+            esti = new DAL.Metodos.MEstilo();
+        }
         public void ActualizarEstilo(Estilo estilo)
         {
             esti.ActualizarEstilo(estilo);

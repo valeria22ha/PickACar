@@ -8,8 +8,13 @@ using Proyecto.BLL.Interfaces;
 
 namespace Proyecto.BLL.Metodos
 {
-    public class MMarca : MBase, IMarca
+    public class MMarca :  IMarca
     {
+        public DAL.Interfaces.IMarca marc;
+        public MMarca()
+        {
+            marc = new DAL.Metodos.MMarca();
+        }
         public void ActualizarMarca(Marca marca)
         {
             marc.ActualizarMarca(marca);
