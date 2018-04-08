@@ -1,0 +1,74 @@
+﻿@model Proyecto.GUI.Models.Cliente
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+ }
+
+<h2>Login</h2>
+
+
+@using (Html.BeginForm("VerificarUsuario", "Cliente"))
+{
+
+
+<div class="form-horizontal">
+    <style>
+        .loginBox {
+            -webkit-border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            width: 50%;
+            color:#ffffff;
+            
+        }
+    </style>
+    <script>
+        var Messages = '@ViewBag.ValMessages';
+        
+        if (Messages != null && Messages != "")
+            alert(Messages);
+
+    </script>
+       
+    <div class="loginBox">
+
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Correo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Correo, new { htmlAttributes = new { @class = "form-control" }, Type="Email" })
+                @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Entrar" class="btn btn-default" />
+            </div>
+            <div class="col-md-offset-2 col-md-10">
+                <a href="/Cliente/RecobrarPassword">¿Olvido su Contraseña?</a>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -13,10 +13,12 @@ namespace Proyecto.BLL.Interfaces
 
         Cliente BuscarCliente(int idCliente);
 
-        void InsertarCliente(Cliente cliente);
+        bool InsertarCliente(Cliente cliente);
 
         void ActualizarCliente(Cliente cliente);
 
         void EliminarCliente(int idCliente);
+
+         
     }
 }
