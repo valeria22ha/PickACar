@@ -19,13 +19,12 @@ namespace Proyecto.DAL.Metodos
 
         public LugarEntregaC BuscarLugar(int idLugar)
         {
-            return _db.Select<LugarEntregaC>(x => x.IDLu == idLugar)
-               .FirstOrDefault();
+            return _db.Select<LugarEntregaC>(x => x.ID == idLugar).FirstOrDefault();
         }
 
         public void EliminarLugar(int idLugar)
         {
-            _db.Delete<LugarEntregaC>(x => x.IDLu == idLugar);
+            _db.Delete<LugarEntregaC>(x => x.ID == idLugar);
         }
 
         public void InsertarLugar(LugarEntregaC lugar)

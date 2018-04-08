@@ -12,7 +12,7 @@ namespace Proyecto.DAL {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
     internal sealed partial class BD : global::System.Configuration.ApplicationSettingsBase {
         
         private static BD defaultInstance = ((BD)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new BD())));

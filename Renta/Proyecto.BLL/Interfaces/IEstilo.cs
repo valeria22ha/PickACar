@@ -16,6 +16,7 @@ namespace Proyecto.BLL.Interfaces
         void InsertarEstilo(Estilo estilo);
 
         void ActualizarEstilo(Estilo estilo);
+
         void EliminarEstilo(int idEstilo);
     }
 }

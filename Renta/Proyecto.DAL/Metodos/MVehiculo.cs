@@ -17,16 +17,15 @@ namespace Proyecto.DAL.Metodos
             _db.Update(vehiculo);
         }
 
-        public Vehiculo BuscarVehiculo(int idVehiculo)
+        public Vehiculo BuscarVehiculo(string idVehiculo)
         {
-            return _db.Select<Vehiculo>(x => x.IDVe == idVehiculo)
+            return _db.Select<Vehiculo>(x => x.ID == idVehiculo)
                 .FirstOrDefault();
         }
 
-        public void EliminarVehiculo(int idVehiculo)
+        public void EliminarVehiculo(string idVehiculo)
         {
-            _db.Delete<Vehiculo>(x => x.IDVe
-            == idVehiculo);
+            _db.Delete<Vehiculo>(x => x.ID == idVehiculo);
         }
 
         public void InsertarVehiculo(Vehiculo vehiculo)
@@ -36,7 +35,7 @@ namespace Proyecto.DAL.Metodos
 
         public List<Vehiculo> ListarVehiculos()
         {
-            return _db.Select<Vehiculo>();
+            return _db.Select<Vehiculo>();//aqu
         }
     }
 }

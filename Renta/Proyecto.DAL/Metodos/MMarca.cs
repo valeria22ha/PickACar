@@ -19,14 +19,13 @@ namespace Proyecto.DAL.Metodos
 
         public Marca BuscarMarca(int idMarca)
         {
-            return _db.Select<Marca>(x => x.IDMa == idMarca)
+            return _db.Select<Marca>(x => x.ID == idMarca)
                .FirstOrDefault();
         }
 
         public void EliminarMarca(int idMarca)
         {
-            _db.Delete<Marca>(x => x.IDMa
-            == idMarca);
+            _db.Delete<Marca>(x => x.ID == idMarca);
         }
 
         public void InsertarMarca(Marca marca)

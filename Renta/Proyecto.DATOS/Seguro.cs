@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceStack.DataAnnotations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Proyecto.DATOS
     public class Seguro
     {
         [AutoIncrement]
-        public int IDSe { get; set; }
+        public int ID { get; set; }
         public string Tipo { get; set; }
         public int Precio { get; set; }
     }

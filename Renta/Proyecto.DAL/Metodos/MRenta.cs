@@ -19,14 +19,13 @@ namespace Proyecto.DAL.Metodos
 
         public Renta BuscarRenta(int idRenta)
         {
-            return _db.Select<Renta>(x => x.IDRe == idRenta)
+            return _db.Select<Renta>(x => x.ID == idRenta)
                 .FirstOrDefault();
         }
 
         public void EliminarRenta(int idRenta)
         {
-            _db.Delete<Renta>(x => x.IDRe
-            == idRenta);
+            _db.Delete<Renta>(x => x.ID == idRenta);
         }
 
         public void InsertarRenta(Renta renta)

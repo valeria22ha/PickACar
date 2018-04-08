@@ -17,6 +17,6 @@ namespace Proyecto.DAL.Interfaces
 
         void ActualizarCombustible(Combustible combustible);
 
-        void EliminarCombustible(Combustible idCombustible);
+        void EliminarCombustible(int idCombustible);
     }
 }

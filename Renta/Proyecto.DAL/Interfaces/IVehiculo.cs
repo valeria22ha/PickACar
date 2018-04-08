@@ -11,12 +11,12 @@ namespace Proyecto.DAL.Interfaces
     {
         List<Vehiculo> ListarVehiculos();
 
-        Vehiculo BuscarVehiculo(int idVehiculo);
+        Vehiculo BuscarVehiculo(string idVehiculo);
 
         void InsertarVehiculo(Vehiculo vehiculo);
 
         void ActualizarVehiculo(Vehiculo vehiculo);
 
-        void EliminarVehiculo(int idVehiculo);
+        void EliminarVehiculo(string idVehiculo);
     }
 }

@@ -20,7 +20,7 @@ namespace Proyecto.BLL.Metodos
             return combu.BuscarCobustible(idCombustible);
         }
 
-        public void EliminarCombustible(Combustible idCombustible)
+        public void EliminarCombustible(int idCombustible)
         {
             combu.EliminarCombustible(idCombustible);
         }

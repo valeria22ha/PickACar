@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceStack.DataAnnotations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,8 @@ namespace Proyecto.DATOS
 {
     public class Puertas
     {
-       [AutoIncrement]
-        public int IDPuer { get; set; }
-        public int Cantidad { get; set; }
+        [AutoIncrement]
+        public int ID { get; set; }
+        public int NumeroPuerta { get; set; }
     }
 }

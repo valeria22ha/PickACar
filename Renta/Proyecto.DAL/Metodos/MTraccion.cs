@@ -19,14 +19,13 @@ namespace Proyecto.DAL.Metodos
 
         public Traccion BuscarTraccion(int idTraccion)
         {
-            return _db.Select<Traccion>(x => x.IDTrac == idTraccion)
+            return _db.Select<Traccion>(x => x.ID == idTraccion)
                .FirstOrDefault();
         }
 
         public void EliminarTraccion(int idTraccion)
         {
-            _db.Delete<Traccion>(x => x.IDTrac
-           == idTraccion);
+            _db.Delete<Traccion>(x => x.ID == idTraccion);
         }
 
         public void InsertarTraccion(Traccion traccion)
