@@ -162,19 +162,19 @@ namespace Proyecto.GUI.Controllers
         }
 
         // GET: AddVehicule/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(String id)
         {
-            return View();
+            AddVehicule vVehiculo = vehiculosMostrar.Where(x => x.ID == id).FirstOrDefault();
+            return View(vVehiculo);
         }
 
         // POST: AddVehicule/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(AddVehicule vehicule)
         {
             try
             {
-                // TODO: Add delete logic here
-
+                veh.EliminarVehiculo(vehicule.ID);
                 return RedirectToAction("Index");
             }
             catch

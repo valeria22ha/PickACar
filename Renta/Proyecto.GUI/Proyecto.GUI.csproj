@@ -325,6 +325,7 @@
     <Content Include="Views\AddVehicule\Create.cshtml" />
     <Content Include="Views\AddVehicule\Index.cshtml" />
     <Content Include="Views\AddVehicule\Edit.cshtml" />
+    <Content Include="Views\AddVehicule\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
