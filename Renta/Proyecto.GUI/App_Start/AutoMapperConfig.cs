@@ -56,6 +56,7 @@ namespace Proyecto.GUI
 
                 cfg.CreateMap<Models.Vehiculo, DATOS.Vehiculo>();
                 cfg.CreateMap<DATOS.Vehiculo, Models.Vehiculo>();
+
             });
         }
     }

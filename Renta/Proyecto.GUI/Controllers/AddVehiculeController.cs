@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Proyecto.BLL.Interfaces;
-using Proyecto.BLL.Metodos;
+using Proyecto.DAL.Interfaces;
+using Proyecto.DAL.Metodos;
 using Proyecto.GUI.Models;
 using System;
 using System.Collections.Generic;
@@ -16,6 +16,7 @@ namespace Proyecto.GUI.Controllers
         IMecanico mec;
         IModelo mod;
         IProveedor prov;
+        static List<AddVehicule> vehiculosMostrar = new List<AddVehicule>();
 
         public AddVehiculeController()
         {
@@ -26,12 +27,25 @@ namespace Proyecto.GUI.Controllers
 
         }
 
-
-
         // GET: AddVehicule
         public ActionResult Index()
         {
-            return View();
+            var listaVehiculos = veh.ListarVehiculos();
+            var vehiculos = Mapper.Map<List<Vehiculo>>(listaVehiculos);
+            foreach (Vehiculo vehi in vehiculos)
+            {
+                var vVehiculo = new AddVehicule()
+                {
+                    ID = vehi.ID,
+                    Precio = vehi.Precio,
+                    VMecanico = mec.ListarMecanicos().Where(x => x.ID == vehi.IDMecanico).Select(x => x.Nombre).First(),
+                    VModelo = mod.ListarModelo().Where(x => x.ID == vehi.IDModelo).Select(x => x.Descripcion).First(),
+                    VProveedor = prov.ListarProveedores().Where(x => x.Cedula == vehi.IDProveedor).Select(x => x.Nombre).First(),
+                };
+
+                vehiculosMostrar.Add(vVehiculo);
+            }
+            return View(vehiculosMostrar);
         }
 
         // GET: AddVehicule/Details/5
@@ -91,20 +105,51 @@ namespace Proyecto.GUI.Controllers
         }
 
         // GET: AddVehicule/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(String id)
         {
-            return View();
+
+            AddVehicule vVehiculo = vehiculosMostrar.Where(x => x.ID == id).FirstOrDefault();
+
+            var vMecanicos = mec.ListarMecanicos();
+            var mMecanicos = Mapper.Map<List<Models.Mecanico>>(vMecanicos);
+            vVehiculo.Mecanicos = mMecanicos;
+
+            var vModelo = mod.ListarModelo();
+            var mModelo = Mapper.Map<List<Models.Modelo>>(vModelo);
+            vVehiculo.Modelos = mModelo;
+
+            var vProveedores = prov.ListarProveedores();
+            var mProveedores = Mapper.Map<List<Models.Proveedor>>(vProveedores);
+            vVehiculo.Proveedores = mProveedores;
+
+            return View(vVehiculo);
         }
 
         // POST: AddVehicule/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(AddVehicule addVehicule)
         {
             try
             {
-                // TODO: Add update logic here
+                if (ModelState.IsValid)
+                {
 
-                return RedirectToAction("Index");
+                    var vehiculo = new Vehiculo()
+                    {
+                        ID = addVehicule.ID,
+                        IDMecanico = addVehicule.SelectedMecanico,
+                        IDModelo = addVehicule.SelectedModelo,
+                        IDProveedor = addVehicule.SelectedProveedor,
+                        Precio = addVehicule.Precio
+                    };
+                    var vehiculoInsertar = Mapper.Map<DATOS.Vehiculo>(vehiculo);
+                    veh.ActualizarVehiculo(vehiculoInsertar);
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return View();
+                }
             }
             catch
             {
