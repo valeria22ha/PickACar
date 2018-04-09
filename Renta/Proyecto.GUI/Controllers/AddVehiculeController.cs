@@ -32,6 +32,7 @@ namespace Proyecto.GUI.Controllers
         {
             var listaVehiculos = veh.ListarVehiculos();
             var vehiculos = Mapper.Map<List<Vehiculo>>(listaVehiculos);
+            List<AddVehicule> vehiculosMostrarIndex = new List<AddVehicule>();
             foreach (Vehiculo vehi in vehiculos)
             {
                 var vVehiculo = new AddVehicule()
@@ -43,8 +44,10 @@ namespace Proyecto.GUI.Controllers
                     VProveedor = prov.ListarProveedores().Where(x => x.Cedula == vehi.IDProveedor).Select(x => x.Nombre).First(),
                 };
 
-                vehiculosMostrar.Add(vVehiculo);
+                vehiculosMostrarIndex.Add(vVehiculo);
             }
+            vehiculosMostrar.Clear();
+            vehiculosMostrar = vehiculosMostrarIndex;
             return View(vehiculosMostrar);
         }
 
@@ -80,6 +83,7 @@ namespace Proyecto.GUI.Controllers
         {
             try
             {
+
                 if (ModelState.IsValid) {
                     
                     var vehiculo = new Vehiculo()

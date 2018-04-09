@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using AutoMapper;
-using Proyecto.BLL.Interfaces;
-using Proyecto.BLL.Metodos; //Metodos extra 
+using Proyecto.DAL.Interfaces;
+using Proyecto.DAL.Metodos; //Metodos extra 
 
 namespace Proyecto.GUI.Controllers
 {
