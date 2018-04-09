@@ -11,24 +11,26 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr>
-        <th>
-            Número de Placa
-        </th>
-        <th>
-            Modelo
-        </th>
-        <th>
-            Mecánico
-        </th>
-        <th>
-            Proveedor
-        </th>
-        <th>
-            Precio
-        </th>
-        <th></th>
-    </tr>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">
+                Número de Placa
+            </th>
+            <th scope="col">
+                Modelo
+            </th>
+            <th scope="col">
+                Mecánico
+            </th>
+            <th scope="col">
+                Proveedor
+            </th>
+            <th scope="col">
+                Precio
+            </th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
 
 @foreach (var item in Model) {
     <tr>
