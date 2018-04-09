@@ -25,3 +25,14 @@ C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proy
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.config
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.pdb
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.pdb
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csprojResolveAssemblyReference.cache
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb

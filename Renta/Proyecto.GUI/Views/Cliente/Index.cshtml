@@ -5,58 +5,60 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Lista de Clientes</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <button class="btn btn-default" onclick="location.href='@Url.Action("Create", "Cliente")'">Agregar Nuevo Cliente</button>
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Cedula)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Apellido)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Telefono)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Direccion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Correo)
-        </th>
-        <th></th>
-    </tr>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">
+                Cédula
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th scope="col">
+                Teléfono
+            </th>
+            <th scope="col">
+                Dirección
+            </th>
+            <th scope="col">
+                Correo Electrónico
+            </th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Cedula)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Nombre)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Apellido)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Telefono)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Direccion)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Correo)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new {  id=item.Cedula  }) |
-            @Html.ActionLink("Details", "Details", new {  id=item.Cedula  }) |
-            @Html.ActionLink("Delete", "Delete", new {  id=item.Cedula })
+        <td style="vertical-align: middle">
+            <button class="btn btn-default" onclick="location.href='@Url.Action("Edit", "Cliente", new { id = item.Cedula })'">Editar</button>
+            <button class="btn btn-default" onclick="location.href='@Url.Action("Details", "Cliente", new { id = item.Cedula })'">Detalles</button>
+            <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Cliente", new { id = item.Cedula })'">Eliminar</button>
         </td>
     </tr>
 }

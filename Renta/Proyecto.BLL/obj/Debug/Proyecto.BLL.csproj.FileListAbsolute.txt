@@ -29,3 +29,16 @@ C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proy
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CopyComplete
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.dll
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.pdb
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.BLL.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.BLL.pdb
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.DAL.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.DATOS.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.DAL.pdb
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.DAL.dll.config
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.DATOS.pdb
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csprojResolveAssemblyReference.cache
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CopyComplete
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.dll
+C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.pdb

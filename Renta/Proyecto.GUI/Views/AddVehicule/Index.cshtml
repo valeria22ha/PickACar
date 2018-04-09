@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Lista de Vehículos</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <button class="btn btn-default" onclick="location.href='@Url.Action("Create", "AddVehicule")'">Agregar Nuevo Vehículo</button>
 </p>
 <table class="table">
     <thead class="thead-light">
@@ -34,24 +34,24 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.ID)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.VModelo)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.VMecanico)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.VProveedor)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Precio)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+        <td style="vertical-align: middle">
+            <button class="btn btn-default" onclick="location.href='@Url.Action("Edit", "AddVehicule", new { id = item.ID })'">Editar</button>
+            <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "AddVehicule", new { id = item.ID })'">Eliminar</button>
         </td>
     </tr>
 }

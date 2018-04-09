@@ -111,22 +111,28 @@ namespace Proyecto.GUI.Controllers
         // GET: AddVehicule/Edit/5
         public ActionResult Edit(String id)
         {
+            try
+            {
+                AddVehicule vVehiculo = vehiculosMostrar.Where(x => x.ID == id).FirstOrDefault();
 
-            AddVehicule vVehiculo = vehiculosMostrar.Where(x => x.ID == id).FirstOrDefault();
+                var vMecanicos = mec.ListarMecanicos();
+                var mMecanicos = Mapper.Map<List<Models.Mecanico>>(vMecanicos);
+                vVehiculo.Mecanicos = mMecanicos;
 
-            var vMecanicos = mec.ListarMecanicos();
-            var mMecanicos = Mapper.Map<List<Models.Mecanico>>(vMecanicos);
-            vVehiculo.Mecanicos = mMecanicos;
+                var vModelo = mod.ListarModelo();
+                var mModelo = Mapper.Map<List<Models.Modelo>>(vModelo);
+                vVehiculo.Modelos = mModelo;
 
-            var vModelo = mod.ListarModelo();
-            var mModelo = Mapper.Map<List<Models.Modelo>>(vModelo);
-            vVehiculo.Modelos = mModelo;
+                var vProveedores = prov.ListarProveedores();
+                var mProveedores = Mapper.Map<List<Models.Proveedor>>(vProveedores);
+                vVehiculo.Proveedores = mProveedores;
 
-            var vProveedores = prov.ListarProveedores();
-            var mProveedores = Mapper.Map<List<Models.Proveedor>>(vProveedores);
-            vVehiculo.Proveedores = mProveedores;
-
-            return View(vVehiculo);
+                return View(vVehiculo);
+            } catch
+            {
+                return RedirectToAction("Index");
+            }
+            
         }
 
         // POST: AddVehicule/Edit/5
@@ -157,7 +163,7 @@ namespace Proyecto.GUI.Controllers
             }
             catch
             {
-                return View();
+                return RedirectToAction("Index");
             }
         }
 
