@@ -244,12 +244,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Vehiculo\Index.cshtml" />
     <Content Include="Views\Vehiculo\VerDisponibles.cshtml" />
-    <Content Include="Views\Renta\RegistrarRenta.cshtml" />
+    <Content Include="Views\Renta\RegistroRenta.cshtml" />
     <Content Include="Views\Home\IndexError.cshtml" />
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Cliente\Login.cshtml" />
     <Content Include="Views\Cliente\RecobrarPassword.cshtml" />
     <Content Include="Views\Cliente\Create.cshtml" />
+    <Content Include="Views\Renta\DetallesRenta.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
