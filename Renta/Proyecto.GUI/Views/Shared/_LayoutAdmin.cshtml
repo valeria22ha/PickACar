@@ -6,6 +6,7 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/LayoutAdmin.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -23,7 +24,7 @@
             </ul>
         </div>
     </nav>
-    <div class="container body-content" style="padding-top:20px;">
+    <div class="container body-content" id="container">
         @RenderBody()
 
     </div>

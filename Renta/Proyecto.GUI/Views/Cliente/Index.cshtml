@@ -8,7 +8,7 @@
 <h2>Lista de Clientes</h2>
 
 <p>
-    <button class="btn btn-default" onclick="location.href='@Url.Action("Create", "Cliente")'">Agregar Nuevo Cliente</button>
+    <button class="btn btn-light" onclick="location.href='@Url.Action("Create", "Cliente")'">Agregar Nuevo Cliente</button>
 </p>
 <table class="table">
     <thead class="thead-light">
@@ -56,8 +56,8 @@
             @Html.DisplayFor(modelItem => item.Correo)
         </td>
         <td style="vertical-align: middle">
-            <button class="btn btn-default" onclick="location.href='@Url.Action("Edit", "Cliente", new { id = item.Cedula })'">Editar</button>
-            <button class="btn btn-default" onclick="location.href='@Url.Action("Details", "Cliente", new { id = item.Cedula })'">Detalles</button>
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Edit", "Cliente", new { id = item.Cedula })'">Editar</button>
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Details", "Cliente", new { id = item.Cedula })'">Detalles</button>
             <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Cliente", new { id = item.Cedula })'">Eliminar</button>
         </td>
     </tr>

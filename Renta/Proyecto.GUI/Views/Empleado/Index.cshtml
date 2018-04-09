@@ -5,16 +5,16 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Lista de Empleados</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <button class="btn btn-light" onclick="location.href='@Url.Action("Create", "Empleado")'">Agregar Nuevo Empleado</button>
 </p>
 <table class="table">
     <thead class="thead-light">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Cedula)
+                Cédula
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Nombre)
@@ -23,13 +23,13 @@
                 @Html.DisplayNameFor(model => model.Apellido)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Telefono)
+                Teléfonno
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Puesto)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Correo)
+                Correo Electrónico
             </th>
             <th></th>
         </tr>
@@ -56,9 +56,9 @@
             @Html.DisplayFor(modelItem => item.Correo)
         </td>
         <td style="vertical-align: middle">
-            @Html.ActionLink("Edit", "Edit", new {  id=item.Cedula  }) |
-            @Html.ActionLink("Details", "Details", new { id = item.Cedula }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.Cedula })
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Edit", "Empleado", new { id = item.Cedula })'">Editar</button>
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Details", "Empleado", new { id = item.Cedula })'">Detalles</button>
+            <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Empleado", new { id = item.Cedula })'">Eliminar</button>
         </td>
     </tr>
 }

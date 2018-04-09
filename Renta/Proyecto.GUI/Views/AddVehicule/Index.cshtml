@@ -8,7 +8,7 @@
 <h2>Lista de Vehículos</h2>
 
 <p>
-    <button class="btn btn-default" onclick="location.href='@Url.Action("Create", "AddVehicule")'">Agregar Nuevo Vehículo</button>
+    <button class="btn btn-light" onclick="location.href='@Url.Action("Create", "AddVehicule")'">Agregar Nuevo Vehículo</button>
 </p>
 <table class="table">
     <thead class="thead-light">
@@ -50,7 +50,7 @@
             @Html.DisplayFor(modelItem => item.Precio)
         </td>
         <td style="vertical-align: middle">
-            <button class="btn btn-default" onclick="location.href='@Url.Action("Edit", "AddVehicule", new { id = item.ID })'">Editar</button>
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Edit", "AddVehicule", new { id = item.ID })'">Editar</button>
             <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "AddVehicule", new { id = item.ID })'">Eliminar</button>
         </td>
     </tr>

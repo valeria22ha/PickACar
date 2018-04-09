@@ -5,27 +5,25 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Lista de Facturas</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.IDCliente)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FechaPago)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TotalPago)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IDRenta)
-        </th>
-        <th></th>
-    </tr>
+    <thead class="thead-light">
+        <tr>
+            <th>
+                ID de Cliente
+            </th>
+            <th>
+                Fecha de Pago
+            </th>
+            <th>
+                Total de Pago
+            </th>
+            <th>
+                ID de Renta
+            </th>
+        </tr>
+    </thead>
 
 @foreach (var item in Model) {
     <tr>
@@ -40,11 +38,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.IDRenta)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
     </tr>
 }

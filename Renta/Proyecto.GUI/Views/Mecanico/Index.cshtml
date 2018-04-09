@@ -5,52 +5,54 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Lista de Mecánicos</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <button class="btn btn-light" onclick="location.href='@Url.Action("Create", "Mecanico")'">Agregar Nuevo Mecánico</button>
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Apellido)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Telefono)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Direccion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Especialidad)
-        </th>
-        <th></th>
-    </tr>
+    <thead class="thead-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                Teléfono
+            </th>
+            <th>
+                Dirección
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Especialidad)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Nombre)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Apellido)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Telefono)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Direccion)
         </td>
-        <td>
+        <td style="vertical-align: middle">
             @Html.DisplayFor(modelItem => item.Especialidad)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        <td style="vertical-align: middle">
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Edit", "Mecanico", new { id = item.ID })'">Editar</button>
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Details", "Mecanico", new { id = item.ID })'">Detalles</button>
+            <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Mecanico", new { id = item.ID })'">Eliminar</button>
         </td>
     </tr>
 }

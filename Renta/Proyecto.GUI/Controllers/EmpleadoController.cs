@@ -30,7 +30,7 @@ namespace Proyecto.GUI.Controllers
         public ActionResult Details(int id)
         {
             var vEmpleado = Empleado.BuscarEmpleado(id);
-            var EmpleadoMostrar = Mapper.Map<List<Models.Empleado>>(vEmpleado);
+            var EmpleadoMostrar = Mapper.Map<Models.Empleado>(vEmpleado);
             return View(EmpleadoMostrar);
         }
 
@@ -68,7 +68,7 @@ namespace Proyecto.GUI.Controllers
         {
             var vEmpleado = Empleado.BuscarEmpleado(id);
             var EmpleadoMostrar = Mapper.Map<Models.Empleado>(vEmpleado);
-            return View();
+            return View(EmpleadoMostrar);
         }
 
         // POST: Empleado/Edit/5
