@@ -38,7 +38,7 @@ namespace Proyecto.GUI.Controllers
 
             return View();
         }
-        
+
         public ActionResult VerDisponibles(string fechaEntr, string fechaDev)
         {
             try
@@ -83,12 +83,13 @@ namespace Proyecto.GUI.Controllers
                 {
                     return RedirectToAction("IndexError", "Home");
                 }
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
-                return RedirectToAction("IndexError", "Home", new { mensaje = e.Message});
+                return RedirectToAction("IndexError", "Home");
 
             }
-            
+
         }
     }
 }
