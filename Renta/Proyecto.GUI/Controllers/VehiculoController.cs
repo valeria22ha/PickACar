@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Proyecto.BLL.Interfaces;
-using Proyecto.BLL.Metodos;
+using Proyecto.DAL.Interfaces;
+using Proyecto.DAL.Metodos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -91,5 +91,13 @@ namespace Proyecto.GUI.Controllers
             }
 
         }
+
+        // GET: Cliente/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        
     }
 }

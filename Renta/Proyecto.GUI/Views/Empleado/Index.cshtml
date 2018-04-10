@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Proyecto.GUI.Models.Empleado>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Lista de Empleados</h2>
+
+<p>
+    <button class="btn btn-light" onclick="location.href='@Url.Action("Create", "Empleado")'">Agregar Nuevo Empleado</button>
+</p>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                Cédula
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                Teléfonno
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Puesto)
+            </th>
+            <th>
+                Correo Electrónico
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Cedula)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Apellido)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Puesto)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Correo)
+        </td>
+        <td style="vertical-align: middle">
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Edit", "Empleado", new { id = item.Cedula })'">Editar</button>
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Details", "Empleado", new { id = item.Cedula })'">Detalles</button>
+            <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Empleado", new { id = item.Cedula })'">Eliminar</button>
+        </td>
+    </tr>
+}
+
+</table>

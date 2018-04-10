@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@model Proyecto.GUI.Models.Cliente
 
 @{
@@ -97,3 +98,71 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+=======
+﻿@model IEnumerable<Proyecto.GUI.Models.Cliente>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Lista de Clientes</h2>
+
+<p>
+    <button class="btn btn-light" onclick="location.href='@Url.Action("Create", "Cliente")'">Agregar Nuevo Cliente</button>
+</p>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">
+                Cédula
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th scope="col">
+                Teléfono
+            </th>
+            <th scope="col">
+                Dirección
+            </th>
+            <th scope="col">
+                Correo Electrónico
+            </th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Cedula)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Apellido)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Direccion)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Correo)
+        </td>
+        <td style="vertical-align: middle">
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Edit", "Cliente", new { id = item.Cedula })'">Editar</button>
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Details", "Cliente", new { id = item.Cedula })'">Detalles</button>
+            <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Cliente", new { id = item.Cedula })'">Eliminar</button>
+        </td>
+    </tr>
+}
+
+</table>
+>>>>>>> Administrador

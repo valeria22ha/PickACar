@@ -12,50 +12,51 @@ namespace Proyecto.GUI
         {
             Mapper.Initialize(cfg =>
             {
-                cfg.CreateMap< Proyecto.GUI.Models.Cliente, Proyecto.DATOS.Cliente>();
-                cfg.CreateMap< Proyecto.DATOS.Cliente,  Proyecto.GUI.Models.Cliente>();
+                cfg.CreateMap< Models.Cliente, DATOS.Cliente>();
+                cfg.CreateMap<DATOS.Cliente, Models.Cliente>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Combustible, Proyecto.DATOS.Combustible>();
-                cfg.CreateMap< Proyecto.DATOS.Combustible, Proyecto.GUI.Models.Combustible>();
+                cfg.CreateMap< Models.Combustible, DATOS.Combustible>();
+                cfg.CreateMap<DATOS.Combustible, Models.Combustible>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Empleado, Proyecto.DATOS.Empleado>();
-                cfg.CreateMap< Proyecto.DATOS.Empleado,  Proyecto.GUI.Models.Empleado>();
+                cfg.CreateMap< Models.Empleado, DATOS.Empleado>();
+                cfg.CreateMap<DATOS.Empleado, Models.Empleado>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Estilo, Proyecto.DATOS.Estilo>();
-                cfg.CreateMap< Proyecto.DATOS.Estilo,  Proyecto.GUI.Models.Estilo>();
+                cfg.CreateMap< Models.Estilo, DATOS.Estilo>();
+                cfg.CreateMap<DATOS.Estilo, Models.Estilo>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Factura, Proyecto.DATOS.Factura>();
-                cfg.CreateMap< Proyecto.DATOS.Factura,  Proyecto.GUI.Models.Factura>();
+                cfg.CreateMap< Models.Factura, DATOS.Factura>();
+                cfg.CreateMap<DATOS.Factura, Models.Factura>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.LugarEntregaC, Proyecto.DATOS.LugarEntregaC>();
-                cfg.CreateMap< Proyecto.DATOS.LugarEntregaC,  Proyecto.GUI.Models.LugarEntregaC>();
+                cfg.CreateMap< Models.LugarEntregaC, DATOS.LugarEntregaC>();
+                cfg.CreateMap<DATOS.LugarEntregaC, Models.LugarEntregaC>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Marca, Proyecto.DATOS.Marca>();
-                cfg.CreateMap< Proyecto.DATOS.Marca,  Proyecto.GUI.Models.Marca>();
+                cfg.CreateMap< Models.Marca, DATOS.Marca>();
+                cfg.CreateMap<DATOS.Marca, Models.Marca>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Mecanico, Proyecto.DATOS.Mecanico>();
-                cfg.CreateMap< Proyecto.DATOS.Mecanico,  Proyecto.GUI.Models.Mecanico>();
+                cfg.CreateMap< Models.Mecanico, DATOS.Mecanico>();
+                cfg.CreateMap<DATOS.Mecanico, Models.Mecanico>();
 
-                cfg.CreateMap<Proyecto.GUI.Models.Modelo, Proyecto.DATOS.Modelo>();
-                cfg.CreateMap<Proyecto.DATOS.Modelo, Proyecto.GUI.Models.Modelo>();
+                cfg.CreateMap<Models.Modelo, DATOS.Modelo>();
+                cfg.CreateMap<DATOS.Modelo, Models.Modelo>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Proveedor, Proyecto.DATOS.Proveedor>();
-                cfg.CreateMap< Proyecto.DATOS.Proveedor,  Proyecto.GUI.Models.Proveedor>();
+                cfg.CreateMap< Models.Proveedor, DATOS.Proveedor>();
+                cfg.CreateMap<DATOS.Proveedor, Models.Proveedor>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Puertas, Proyecto.DATOS.Puertas>();
-                cfg.CreateMap< Proyecto.DATOS.Puertas, Proyecto.GUI.Models.Puertas>();
+                cfg.CreateMap<Models.Puertas, DATOS.Puertas>();
+                cfg.CreateMap<DATOS.Puertas, Models.Puertas>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Seguro, Proyecto.DATOS.Seguro>();
-                cfg.CreateMap< Proyecto.DATOS.Seguro,  Proyecto.GUI.Models.Seguro>();
+                cfg.CreateMap<Models.Seguro, DATOS.Seguro>();
+                cfg.CreateMap<DATOS.Seguro, Models.Seguro>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Traccion, Proyecto.DATOS.Traccion>();
-                cfg.CreateMap< Proyecto.DATOS.Traccion,  Proyecto.GUI.Models.Traccion>();
+                cfg.CreateMap<Models.Traccion, DATOS.Traccion>();
+                cfg.CreateMap<DATOS.Traccion, Models.Traccion>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Transmicion, Proyecto.DATOS.Transmicion>();
-                cfg.CreateMap< Proyecto.DATOS.Transmicion, Proyecto.GUI.Models.Transmicion>();
+                cfg.CreateMap<Models.Transmicion, DATOS.Transmicion>();
+                cfg.CreateMap<DATOS.Transmicion, Models.Transmicion>();
 
-                cfg.CreateMap< Proyecto.GUI.Models.Vehiculo, Proyecto.DATOS.Vehiculo>();
-                cfg.CreateMap< Proyecto.DATOS.Vehiculo, Proyecto.GUI.Models.Vehiculo>();
+                cfg.CreateMap<Models.Vehiculo, DATOS.Vehiculo>();
+                cfg.CreateMap<DATOS.Vehiculo, Models.Vehiculo>();
+
             });
         }
     }

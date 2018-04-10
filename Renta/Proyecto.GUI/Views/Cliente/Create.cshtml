@@ -1,6 +1,7 @@
 ﻿@model Proyecto.GUI.Models.Cliente
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "c";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -28,6 +29,24 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.Cedula, htmlAttributes: new { @class = "control-label col-md-2" })
+=======
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Agregar</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Cliente</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cedula, "Cédula", htmlAttributes: new { @class = "control-label col-md-2" })
+>>>>>>> Administrador
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Cedula, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Cedula, "", new { @class = "text-danger" })
@@ -51,7 +70,11 @@
         </div>
 
         <div class="form-group">
+<<<<<<< HEAD
             @Html.LabelFor(model => model.Telefono, htmlAttributes: new { @class = "control-label col-md-2" })
+=======
+            @Html.LabelFor(model => model.Telefono, "Teléfono",htmlAttributes: new { @class = "control-label col-md-2" })
+>>>>>>> Administrador
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
@@ -59,7 +82,11 @@
         </div>
 
         <div class="form-group">
+<<<<<<< HEAD
             @Html.LabelFor(model => model.Direccion, htmlAttributes: new { @class = "control-label col-md-2" })
+=======
+            @Html.LabelFor(model => model.Direccion, "Dirección",htmlAttributes: new { @class = "control-label col-md-2" })
+>>>>>>> Administrador
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Direccion, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Direccion, "", new { @class = "text-danger" })
@@ -67,7 +94,11 @@
         </div>
 
         <div class="form-group">
+<<<<<<< HEAD
             @Html.LabelFor(model => model.Correo, htmlAttributes: new { @class = "control-label col-md-2" })
+=======
+            @Html.LabelFor(model => model.Correo, "Correo Electrónico",htmlAttributes: new { @class = "control-label col-md-2" })
+>>>>>>> Administrador
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Correo, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
@@ -82,14 +113,20 @@
             </div>
         </div>
 
+<<<<<<< HEAD
      @*<div class="form-group">
             @Html.LabelFor(model => model.Tipo, htmlAttributes: new { @class = "control-label col-md-2" })
+=======
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tipo, "¿Es Administrador?",htmlAttributes: new { @class = "control-label col-md-2" })
+>>>>>>> Administrador
             <div class="col-md-10">
                 <div class="checkbox">
                     @Html.EditorFor(model => model.Tipo)
                     @Html.ValidationMessageFor(model => model.Tipo, "", new { @class = "text-danger" })
                 </div>
             </div>
+<<<<<<< HEAD
         </div>*@
     
         <div class="form-group">
@@ -107,3 +144,18 @@
     @section Scripts {
         @Scripts.Render("~/bundles/jqueryval")
     }
+=======
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Agregar Nuevo Cliente" class="btn btn-light" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Volver a la Lista", "Index")
+</div>
+>>>>>>> Administrador

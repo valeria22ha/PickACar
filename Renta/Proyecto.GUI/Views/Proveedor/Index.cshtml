@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Proyecto.GUI.Models.Proveedor>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Lista de Proveedores</h2>
+
+<p>
+    <button class="btn btn-light" onclick="location.href='@Url.Action("Create", "Proveedor")'">Agregar Nuevo Proveedor</button>
+</p>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                Cédula
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                Teléfono
+            </th>
+            <th>
+                Ubicación
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Cedula)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Apellido)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td style="vertical-align: middle">
+            @Html.DisplayFor(modelItem => item.Ubicacion)
+        </td>
+        <td style="vertical-align: middle">
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Edit", "Proveedor", new { id = item.Cedula })'">Editar</button>
+            <button class="btn btn-light" onclick="location.href='@Url.Action("Details", "Proveedor", new { id = item.Cedula })'">Detalles</button>
+            <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Proveedor", new { id = item.Cedula })'">Eliminar</button>
+        </td>
+    </tr>
+}
+
+</table>

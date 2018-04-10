@@ -1,0 +1,63 @@
+﻿@model Proyecto.GUI.Models.AddVehicule
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Editar Vehículo</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Vehículo</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.ID)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SelectedModelo, "Modelo", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.SelectedModelo, new SelectList(Model.Modelos, "ID", "Descripcion"), htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SelectedModelo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SelectedMecanico, "Mecánico", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.SelectedMecanico, new SelectList(Model.Mecanicos, "ID", "Nombre"), htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SelectedMecanico, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SelectedProveedor, "Proveedor", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.SelectedProveedor, new SelectList(Model.Proveedores, "Cedula", "Nombre"), htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SelectedProveedor, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Precio, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Precio, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Precio, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Actualizar" class="btn btn-light" />
+        </div>
+    </div>
+
+    <div>
+        <button class="btn btn-light" onclick="location.href='@Url.Action("Index", "AddVehicule")'">Volver a la Lista</button>
+    </div>
+</div>
+}
+
