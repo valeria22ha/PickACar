@@ -2,6 +2,7 @@
     ViewBag.Title = "RegistrarRenta";
     Proyecto.GUI.Models.Modelo modelo = ViewData["modelo"] as Proyecto.GUI.Models.Modelo;
     Proyecto.GUI.Models.Vehiculo vehiculo = ViewData["vehiculo"] as Proyecto.GUI.Models.Vehiculo;
+    Proyecto.GUI.Models.Transmicion transmicion = ViewData["transmicion"] as Proyecto.GUI.Models.Transmicion;
     string fechaEntr = ViewData["fechaEntr"] as string;
     string fechaDev = ViewData["fechaDev"] as string;
     string idCliente = ViewData["cliente"] as string;
@@ -20,7 +21,7 @@
     <div style="position:absolute; top:5%; left: 50%; width: 45%; height: 90%; color:white;">
         <h2>@modelo.Descripcion</h2>
         <h3>@vehiculo.ID</h3>
-        <h3>Mas detalles...</h3>
+        <h3> Transmision: @transmicion.Descripcion </h3>
 
         <div style="position:relative; top:5%; left:35%;">
             @Html.ActionLink("Rentar", "RegistroRenta", "Renta", new
@@ -31,7 +32,7 @@
                 fechaDev = fechaDev,
                 idSeguro = 1,
                 idLugar = 1,
-            }, htmlAttributes: new { @class = "btn btn-info btn-lg" })}
+            }, htmlAttributes: new { @class = "btn btn-info btn-lg" })
         </div>
     </div>
 </div>

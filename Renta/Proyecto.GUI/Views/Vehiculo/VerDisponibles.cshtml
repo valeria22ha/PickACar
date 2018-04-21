@@ -22,35 +22,40 @@
 
     List<Proyecto.GUI.Models.Modelo> listaDisponibles = new List<Proyecto.GUI.Models.Modelo>();
 
-    int rentas;
-    int disponibles;
+    int rentasM;
+    int vehiDisponibles;
 
     foreach (var mode in listaModelos)
     {
-        disponibles = 0;
-        rentas = 0;
+        vehiDisponibles = 0;
+        rentasM = 0;
         foreach (var car in listaVehiculos)
         {
+            rentasM = 0;
             if (car.IDModelo == mode.ID)
             {
                 foreach (var rent in listaRentas)
                 {
                     if (rent.IDVehiculo == car.ID)
                     {
-                        rentas++;
-                        if (rent.FechaEntrega > Convert.ToDateTime(fechaEntr)
-                            && rent.FechaDevolucion < Convert.ToDateTime(fechaEntr)
-                            && rent.FechaEntrega > Convert.ToDateTime(fechaDev)
-                            && rent.FechaDevolucion < Convert.ToDateTime(fechaDev)
-                            )
+                        if (
+                            !(Convert.ToDateTime(fechaDev) < rent.FechaEntrega
+                               ||
+                               Convert.ToDateTime(fechaEntr) > rent.FechaDevolucion
+                             )
+                           )
                         {
-                            disponibles++;
+                            rentasM++;
                         }
                     }
                 }
+                if (rentasM == 0)
+                {
+                    vehiDisponibles++;
+                }
             }
         }
-        if (disponibles > 0 || rentas == 0)
+        if (vehiDisponibles > 0)
         {
             listaDisponibles.Add(mode);
         }
@@ -74,7 +79,7 @@
             <div style="position:relative; top:2.5%; left:35%;">
                 @Html.ActionLink("Ver detalles", "DetallesRenta", "Renta", new
                 { idModelo = modelo.ID, idCliente = 1, fechaEntr = fechaEntr, fechaDev = fechaDev },
-                                htmlAttributes: new { @class = "btn btn-info btn-lg" })
+                                          htmlAttributes: new { @class = "btn btn-info btn-lg" })
             </div>
             <br />
         </div>

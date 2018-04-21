@@ -330,7 +330,6 @@ C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\bin\Microsoft.AI.Web.xml
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\bin\es\System.Web.Optimization.resources.dll
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csprojResolveAssemblyReference.cache
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csproj.CoreCompileInputs.cache
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csproj.CopyComplete
