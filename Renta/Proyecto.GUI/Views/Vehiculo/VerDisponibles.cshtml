@@ -73,7 +73,7 @@
             <h3 style="text-align:center; color: white;"><b>@modelo.Descripcion</b></h3>
             <img src="@modelo.Imagen" style="position:relative; width:70%; height: 60%; left:15%; " />
             <div style="position:relative; top:2.5%; left:35%;">
-                @Html.ActionLink("Ver detalles", "RegistrarRenta", "Renta", new
+                @Html.ActionLink("Ver detalles", "DetallesRenta", "Renta", new
                 { idModelo = modelo.ID, idCliente = 1, fechaEntr = fechaEntr, fechaDev = fechaDev },
                            htmlAttributes: new { @class = "btn btn-info btn-lg" })
             </div>

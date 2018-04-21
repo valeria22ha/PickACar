@@ -85,7 +85,7 @@ namespace Proyecto.GUI.Controllers
                 }
             } catch (Exception e)
             {
-                return RedirectToAction("IndexError", "Home", new { mensaje = e.Message});
+                return RedirectToAction("IndexError", "Home");
 
             }
             

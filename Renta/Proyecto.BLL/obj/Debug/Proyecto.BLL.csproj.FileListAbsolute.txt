@@ -16,3 +16,16 @@ C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\b
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CopyComplete
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.pdb
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\bin\Debug\Proyecto.BLL.dll
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\bin\Debug\Proyecto.BLL.pdb
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\bin\Debug\Proyecto.DAL.dll
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\bin\Debug\Proyecto.DATOS.dll
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\bin\Debug\Proyecto.DAL.pdb
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\bin\Debug\Proyecto.DAL.dll.config
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\bin\Debug\Proyecto.DATOS.pdb
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CopyComplete
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.dll
+C:\Users\Leonardo Brenes\Documents\U\VI C\Progra V\proyecto\PickACar - aqui\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.pdb

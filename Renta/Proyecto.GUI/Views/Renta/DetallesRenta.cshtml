@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "RegistrarRenta";
+    Proyecto.GUI.Models.Modelo modelo = ViewData["modelo"] as Proyecto.GUI.Models.Modelo;
+    Proyecto.GUI.Models.Vehiculo vehiculo = ViewData["vehiculo"] as Proyecto.GUI.Models.Vehiculo;
+    string fechaEntr = ViewData["fechaEntr"] as string;
+    string fechaDev = ViewData["fechaDev"] as string;
+    string idCliente = ViewData["cliente"] as string;
+}
+
+<div style="position:fixed; width:100%; height:100%; left:0%; background-color:rgba(0, 0, 0,0.4); z-index:-1;"></div>
+
+<h1 style="color:white; position:absolute; left:10%; top:5%;">Registrar renta</h1>
+
+<div style="position:fixed; width:80%; height:68%; left:10%; top:17% ; background-color:rgba(0, 0, 0,0.6); z-index:-1;">
+    <div id="imagen" style="position:absolute; top:5%; left: 2%; width: 40%; height: 90%;">
+        <img src="@modelo.Imagen" style="position:relative; width:100%; height:100%;" />
+    </div>
+    <div id="divisor" style="position:absolute; top:4%; left: 45%; width: 0.25%; height: 92%; background:rgb(255,255,255);">
+    </div>
+    <div style="position:absolute; top:5%; left: 50%; width: 45%; height: 90%; color:white;">
+        <h2>@modelo.Descripcion</h2>
+        <h3>@vehiculo.ID</h3>
+        <h3>Mas detalles...</h3>
+        
+        <div style="position:relative; top:5%; left:35%;">
+            @Html.ActionLink("Rentar", "RegistroRenta", "Renta", new
+            {
+                idCliente = 1,
+                idVehiculo = vehiculo.ID,
+                fechaEntr = fechaEntr,
+                fechaDev = fechaDev,
+                idSeguro = 1,
+                idLugar = 1,
+            }, htmlAttributes: new { @class = "btn btn-info btn-lg" })}
+        </div>
+    </div>
+</div>
+
+@{ /* este es el mio*/}
