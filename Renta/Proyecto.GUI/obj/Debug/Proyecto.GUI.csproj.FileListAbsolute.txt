@@ -115,18 +115,28 @@ C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.GUI\b
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.GUI\bin\Proyecto.BLL.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.GUI\bin\Proyecto.BLL.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\csc.exe
+=======
+>>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.ValueTuple.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csprojResolveAssemblyReference.cache
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csproj.CoreCompileInputs.cache
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\ApplicationInsights.config
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\Proyecto.GUI.dll.config
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\Proyecto.GUI.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\Proyecto.GUI.pdb
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\csc.exe
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\csc.exe.config
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\csc.rsp
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\csi.exe
@@ -136,12 +146,10 @@ C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.AppContext.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Console.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Diagnostics.Process.dll
@@ -153,12 +161,10 @@ C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Security.Claims.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Security.Principal.Windows.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Threading.Thread.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.ValueTuple.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Xml.ReaderWriter.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Xml.XmlDocument.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\roslyn\System.Xml.XPath.dll
@@ -221,11 +227,10 @@ C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\Micros
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\Microsoft.AI.Web.xml
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\bin\es\System.Web.Optimization.resources.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csprojResolveAssemblyReference.cache
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csproj.CoreCompileInputs.cache
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csproj.CopyComplete
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.pdb
+<<<<<<< HEAD
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\bin\ApplicationInsights.config
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\bin\Proyecto.GUI.dll.config
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.GUI\bin\Proyecto.GUI.dll
@@ -567,3 +572,5 @@ C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.csproj
 C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.dll
 C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.GUI\obj\Debug\Proyecto.GUI.pdb
 >>>>>>> Administrador
+=======
+>>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar

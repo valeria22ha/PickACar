@@ -31,6 +31,8 @@ namespace Proyecto.DAL.Metodos
 
             _db.Insert(cliente);
 
+
+
         }
 
         void ICliente.ActualizarCliente(Cliente cliente)

@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Ver Disponibles";
 
     IEnumerable<Proyecto.GUI.Models.Vehiculo> listaVehiculos = ViewData["Vehiculos"] as IEnumerable<Proyecto.GUI.Models.Vehiculo>;
@@ -56,7 +57,7 @@
         }
     }
 
-    string estilo = "position: absolute; width: 75%; left: 12.5%; height:" + listaDisponibles.Count / 3 * 310 + "px";
+    string estilo = "position: absolute; width: 75%; left: 12.5%; height:"+ listaDisponibles.Count / 3 * 310 +"px";
 }
 
 <div style="position:fixed; width:100%; height:100%; left:0%; background-color:rgba(0, 0, 0,0.4); z-index:-1;"></div>
@@ -72,9 +73,9 @@
             <h3 style="text-align:center; color: white;"><b>@modelo.Descripcion</b></h3>
             <img src="@modelo.Imagen" style="position:relative; width:70%; height: 60%; left:15%; " />
             <div style="position:relative; top:2.5%; left:35%;">
-                @Html.ActionLink("Ver detalles", "DetallesRenta", "Renta", new
+                @Html.ActionLink("Ver detalles", "RegistrarRenta", "Renta", new
                 { idModelo = modelo.ID, idCliente = 1, fechaEntr = fechaEntr, fechaDev = fechaDev },
-                                htmlAttributes: new { @class = "btn btn-info btn-lg" })
+                           htmlAttributes: new { @class = "btn btn-info btn-lg" })
             </div>
             <br />
         </div>

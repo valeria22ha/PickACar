@@ -17,6 +17,11 @@ C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\o
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.dll
 C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csprojResolveAssemblyReference.cache
+C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CoreCompileInputs.cache
+>>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.BLL.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.BLL.pdb
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\bin\Debug\Oracle.ManagedDataAccess.dll
@@ -25,11 +30,10 @@ C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\bin\Debug\
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.DAL.pdb
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.DAL.dll.config
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csprojResolveAssemblyReference.cache
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CoreCompileInputs.cache
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj.CopyComplete
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.dll
 C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.pdb
+<<<<<<< HEAD
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.BLL\bin\Debug\Proyecto.BLL.dll
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.BLL\bin\Debug\Proyecto.BLL.pdb
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.BLL\bin\Debug\Oracle.ManagedDataAccess.dll
@@ -71,3 +75,5 @@ C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.csproj
 C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.dll
 C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.BLL\obj\Debug\Proyecto.BLL.pdb
 >>>>>>> Administrador
+=======
+>>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar

@@ -18,6 +18,7 @@ namespace Proyecto.BLL.Interfaces
         void ActualizarCliente(Cliente cliente);
 
         void EliminarCliente(int idCliente);
-        
+
+         
     }
 }

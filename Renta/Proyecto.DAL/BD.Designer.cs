@@ -26,7 +26,12 @@ namespace Proyecto.DAL {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+<<<<<<< HEAD
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ALEPC;Initial Catalog=Renta;Integrated Security=True")]
+=======
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9AC7BTS\\SQLEXPRESS;Initial Catalog=Renta;Integrated Security=" +
+            "True")]
+>>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
         public string Conexion {
             get {
                 return ((string)(this["Conexion"]));

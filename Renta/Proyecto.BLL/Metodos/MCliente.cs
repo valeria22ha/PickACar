@@ -62,7 +62,7 @@ namespace Proyecto.BLL.Metodos
                 {
                     //       SmtpClient client = new SmtpClient()
                     //       {
-                    //           Credentials = new NetworkCredential("juanesqcr@gmail.com", "")
+                    //           Credentials = new NetworkCredential("juanesqcr@gmail.com", "jeqr1997")
                     //       };
                     //       client.Port = 587;
                     //       client.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -87,7 +87,7 @@ namespace Proyecto.BLL.Metodos
                     SmtpClient smtp = new SmtpClient();
                     smtp.Host = "smtp.gmail.com";
 
-                    NetworkCredential authinfo = new NetworkCredential("juanesqcr@gmail.com", "asa"/*Aqui va la contrasena*/);
+                    NetworkCredential authinfo = new NetworkCredential("juanesqcr@gmail.com", /*Aqui va la contraseña*/);
                     smtp.UseDefaultCredentials = false;
                     smtp.Credentials = authinfo;
                     smtp.Send(m);

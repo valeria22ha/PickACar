@@ -9,15 +9,10 @@ namespace Proyecto.GUI.Models
 {
     public class Cliente
     {
-        [Required(ErrorMessage ="Es necesario Insertar un dato")]
         public int Cedula { get; set; }
-        [Required(ErrorMessage = "Es necesario Insertar un Nombre")]
         public string Nombre { get; set; }
-        [Required(ErrorMessage = "Es necesario Insertar un Apellido")]
         public string Apellido { get; set; }
-        [Required(ErrorMessage = "Es necesario Insertar un Telefono")]
         public string Telefono { get; set; }
-        [Required(ErrorMessage = "Es necesario Insertar una Direccion")]
         public string Direccion { get; set; }
         [Required(ErrorMessage = "Debe de ingresar un correo")]
         [EmailAddress(ErrorMessage = "Debe de introducir un Correo valido")]
@@ -29,10 +24,10 @@ namespace Proyecto.GUI.Models
 
         public static bool VerficarLogin(Cliente pDatos)
         {
-            BLL.Metodos.MCliente lvClient = new BLL.Metodos.MCliente();
+            Proyecto.BLL.Metodos.MCliente lvClient = new BLL.Metodos.MCliente();
             DATOS.Cliente AuthData = new DATOS.Cliente() { Correo = pDatos.Correo, Password = pDatos.Password };
             var result = lvClient.AutentificarCliente(AuthData);
-            //TODO: Variables de session 
+            //si es verdadero, guardar sessiones de autentificación.
             return result;
         }
     }
