@@ -87,9 +87,7 @@ namespace Proyecto.GUI.Controllers
             catch (Exception e)
             {
                 return RedirectToAction("IndexError", "Home");
-
             }
-
         }
     }
 }

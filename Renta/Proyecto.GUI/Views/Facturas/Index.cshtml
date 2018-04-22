@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Proyecto.GUI.Models.Factura>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Lista de Facturas</h2>
+
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                ID de Cliente
+            </th>
+            <th>
+                Fecha de Pago
+            </th>
+            <th>
+                Total de Pago
+            </th>
+            <th>
+                ID de Renta
+            </th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaPago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDRenta)
+            </td>
+        </tr>
+    }
+
+</table>

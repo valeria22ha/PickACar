@@ -95,10 +95,7 @@ namespace Proyecto.GUI.Controllers
             return View();
         }
 
-
-
-
-
+        
         public ActionResult RegistroRenta(string idCliente, string idVehiculo,
             string fechaEntr, string fechaDev, int idSeguro, int idLugar)
         {

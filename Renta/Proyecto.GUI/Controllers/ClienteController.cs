@@ -38,8 +38,8 @@ namespace Proyecto.GUI.Controllers
             var a = GUI.Models.Cliente.VerficarLogin(pCliente);
             if (a)
             {
-                //Setiar variables de usuario.
-                return new RedirectResult("\\");
+                System.Web.HttpContext.Current.Session["cliente"] = pCliente.Correo;
+                return RedirectToAction("index","home");
             }
             else
             {
@@ -133,5 +133,10 @@ namespace Proyecto.GUI.Controllers
             return View("RecobrarPassword");
         }
 
+        public ActionResult CerrarS()
+        {
+            Session.Abandon();
+            return RedirectToAction("Login","Cliente");
+        }
     }
 }

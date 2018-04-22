@@ -1,8 +1,8 @@
 ﻿@model Proyecto.GUI.Models.Cliente
 
 @{
-    ViewBag.Title = "c";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Registrarse";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
 }
 <style>
     .loginBox {
@@ -26,7 +26,7 @@
     <div class="form-horizontal">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
+        <div class="form-group7">
             @Html.LabelFor(model => model.Cedula, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Cedula, new { htmlAttributes = new { @class = "form-control" } })

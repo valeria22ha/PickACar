@@ -182,13 +182,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddVehiculeController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\EmpleadoController.cs" />
+    <Compile Include="Controllers\FacturasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MecanicoController.cs" />
+    <Compile Include="Controllers\ProovedorController.cs" />
     <Compile Include="Controllers\RentaController.cs" />
     <Compile Include="Controllers\VehiculoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AddVehicule.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Combustible.cs" />
     <Compile Include="Models\Empleado.cs" />
@@ -246,11 +252,32 @@
     <Content Include="Views\Vehiculo\VerDisponibles.cshtml" />
     <Content Include="Views\Renta\RegistroRenta.cshtml" />
     <Content Include="Views\Home\IndexError.cshtml" />
-    <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Cliente\Login.cshtml" />
     <Content Include="Views\Cliente\RecobrarPassword.cshtml" />
     <Content Include="Views\Cliente\Create.cshtml" />
     <Content Include="Views\Renta\DetallesRenta.cshtml" />
+    <Content Include="Views\AddVehicule\Create.cshtml" />
+    <Content Include="Views\AddVehicule\Delete.cshtml" />
+    <Content Include="Views\AddVehicule\Edit.cshtml" />
+    <Content Include="Views\AddVehicule\Index.cshtml" />
+    <Content Include="Views\Empleado\Create.cshtml" />
+    <Content Include="Views\Empleado\Details.cshtml" />
+    <Content Include="Views\Empleado\Edit.cshtml" />
+    <Content Include="Views\Empleado\Index.cshtml" />
+    <Content Include="Views\Facturas\Index.cshtml" />
+    <Content Include="Views\Mecanico\Create.cshtml" />
+    <Content Include="Views\Mecanico\Delete.cshtml" />
+    <Content Include="Views\Mecanico\Details.cshtml" />
+    <Content Include="Views\Mecanico\Edit.cshtml" />
+    <Content Include="Views\Mecanico\Index.cshtml" />
+    <Content Include="Views\Proovedor\Create.cshtml" />
+    <Content Include="Views\Proovedor\Delete.cshtml" />
+    <Content Include="Views\Proovedor\Details.cshtml" />
+    <Content Include="Views\Proovedor\Edit.cshtml" />
+    <Content Include="Views\Proovedor\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Vehiculo\Create.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

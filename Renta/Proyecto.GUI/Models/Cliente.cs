@@ -30,7 +30,7 @@ namespace Proyecto.GUI.Models
         public static bool VerficarLogin(Cliente pDatos)
         {
             BLL.Metodos.MCliente lvClient = new BLL.Metodos.MCliente();
-            DATOS.Cliente AuthData = new DATOS.Cliente() { Correo = pDatos.Correo, Password = pDatos.Password };
+            DATOS.Cliente AuthData = new DATOS.Cliente() { Correo = pDatos.Correo, Password = pDatos.Password};
             var result = lvClient.AutentificarCliente(AuthData);
             //TODO: Variables de session 
             return result;
