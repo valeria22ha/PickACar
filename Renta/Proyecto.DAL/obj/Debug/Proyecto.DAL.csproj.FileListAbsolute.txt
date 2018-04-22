@@ -1,47 +1,3 @@
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.config
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.pdb
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.Common.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.OrmLite.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.Text.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\System.Runtime.Serialization.Primitives.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\ServiceStack.Interfaces.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csprojResolveAssemblyReference.cache
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CoreCompileInputs.cache
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csprojResolveAssemblyReference.cache
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CoreCompileInputs.cache
->>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.config
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.pdb
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\bin\Debug\System.Runtime.Serialization.Primitives.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb
-<<<<<<< HEAD
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.config
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.pdb
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.dll
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\bin\Debug\System.Runtime.Serialization.Primitives.dll
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csprojResolveAssemblyReference.cache
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CoreCompileInputs.cache
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb
-=======
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.config
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.pdb
@@ -53,17 +9,5 @@ C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proy
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.config
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.pdb
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.dll
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\System.Runtime.Serialization.Primitives.dll
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csprojResolveAssemblyReference.cache
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CoreCompileInputs.cache
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
-C:\Users\ALEGU\Desktop\PickACar\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb
->>>>>>> Administrador
-=======
->>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.CodeAnalysisLog.xml
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.lastcodeanalysissucceeded

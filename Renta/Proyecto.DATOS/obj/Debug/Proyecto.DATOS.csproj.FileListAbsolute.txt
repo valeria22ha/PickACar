@@ -1,35 +1,3 @@
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\Oracle.ManagedDataAccess.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Common.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Interfaces.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.OrmLite.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\bin\Debug\ServiceStack.Text.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csprojResolveAssemblyReference.cache
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CoreCompileInputs.cache
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CopyComplete
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.dll
-C:\Users\Leonardo Brenes\Desktop\Proyecto Progra V\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.pdb
-<<<<<<< HEAD
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DATOS\bin\Debug\Oracle.ManagedDataAccess.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csprojResolveAssemblyReference.cache
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CoreCompileInputs.cache
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CopyComplete
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.dll
-C:\Users\juane\OneDrive\Documentos\GitHub\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.pdb
-<<<<<<< HEAD
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.dll
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.pdb
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DATOS\bin\Debug\Oracle.ManagedDataAccess.dll
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csprojResolveAssemblyReference.cache
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CoreCompileInputs.cache
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CopyComplete
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.dll
-C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.pdb
-=======
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.dll
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.pdb
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\bin\Debug\Oracle.ManagedDataAccess.dll
@@ -38,6 +6,5 @@ C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Pr
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.csproj.CopyComplete
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.dll
 C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\obj\Debug\Proyecto.DATOS.pdb
->>>>>>> Administrador
-=======
->>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.dll.CodeAnalysisLog.xml
+C:\Users\Alejandro Guerrero A\Desktop\PickACar\Renta\Proyecto.DATOS\bin\Debug\Proyecto.DATOS.dll.lastcodeanalysissucceeded

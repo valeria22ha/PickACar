@@ -87,7 +87,9 @@ namespace Proyecto.BLL.Metodos
                     SmtpClient smtp = new SmtpClient();
                     smtp.Host = "smtp.gmail.com";
 
-                    NetworkCredential authinfo = new NetworkCredential("juanesqcr@gmail.com", /*Aqui va la contraseña*/);
+#pragma warning disable CS1525 // Invalid expression term ')'
+                    NetworkCredential authinfo = new NetworkCredential("juanesqcr@gmail.com", /*Contraseña*/);
+#pragma warning restore CS1525 // Invalid expression term ')'
                     smtp.UseDefaultCredentials = false;
                     smtp.Credentials = authinfo;
                     smtp.Send(m);

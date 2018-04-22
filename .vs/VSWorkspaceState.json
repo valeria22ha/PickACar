@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Renta",
+    "\\Renta\\Proyecto.DAL",
+    "\\Renta\\Proyecto.GUI"
   ],
+  "SelectedNode": "\\Renta\\Proyecto.GUI\\Web.config",
   "PreviewInSolutionExplorer": false
 }

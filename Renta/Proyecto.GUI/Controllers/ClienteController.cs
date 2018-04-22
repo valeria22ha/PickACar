@@ -3,49 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-<<<<<<< HEAD
 using AutoMapper;
-<<<<<<< HEAD
-using Proyecto.GUI.Models;
 using Proyecto.DATOS;
 using Proyecto.DAL.Interfaces;
 using Proyecto.DAL.Metodos;
-=======
-using Proyecto.DAL.Interfaces;
-using Proyecto.DAL.Metodos; //Metodos extra 
->>>>>>> Administrador
-=======
-using Proyecto.BLL.Metodos;
 using Proyecto.GUI.Models;
->>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
 
 namespace Proyecto.GUI.Controllers
 {
     public class ClienteController : Controller
     {
-<<<<<<< HEAD
 
-<<<<<<< HEAD
+
+
         ICliente clien;//se usan los de DAL
 
         public ClienteController()
         {
             clien = new MCliente();
-=======
+        }
+
         ICliente cliente;
 
         public ClienteController()
         {
             cliente = new MCliente();
->>>>>>> Administrador
+
         }
 
-=======
->>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
         // GET: Cliente
         public ActionResult Index()
         {
-<<<<<<< HEAD
+
             return View();
         }
 
@@ -76,12 +65,10 @@ namespace Proyecto.GUI.Controllers
 
         }
 
-<<<<<<< HEAD
-=======
-            var listaClientes = cliente.ListarClientes();
-            var clientes = Mapper.Map<List<Models.Cliente>>(listaClientes);
-            return View(clientes);
-        }
+        //    var listaClientes = cliente.ListarClientes();
+        //    var clientes = Mapper.Map<List<Models.Cliente>>(listaClientes);
+        //    return View(clientes);
+        //}
 
         // GET: Cliente/Details/5
         public ActionResult Details(int id)
@@ -92,13 +79,13 @@ namespace Proyecto.GUI.Controllers
         }
 
         // GET: Cliente/Create
->>>>>>> Administrador
+
         public ActionResult Create()
         {
             return View();
         }
 
-<<<<<<< HEAD
+
         [HttpPost]
         public ActionResult Create(Models.Cliente cliente)
         {
@@ -120,9 +107,6 @@ namespace Proyecto.GUI.Controllers
             return View("Login");
 
         }
-
-=======
->>>>>>> parent of 003543e... Merge branch 'master' of https://github.com/valeria22ha/PickACar
 
         public ActionResult RecobrarPassword()
         {
@@ -158,7 +142,7 @@ namespace Proyecto.GUI.Controllers
 
     }
 }
-=======
+
         // POST: Cliente/Create
         [HttpPost]
         public ActionResult Create(Models.Cliente pCliente)
@@ -221,4 +205,4 @@ namespace Proyecto.GUI.Controllers
         }
     }
 }
->>>>>>> Administrador
+

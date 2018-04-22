@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Interfaces\ICliente.cs" />
     <Compile Include="Interfaces\ICombustible.cs" />
     <Compile Include="Interfaces\IEmpleado.cs" />
