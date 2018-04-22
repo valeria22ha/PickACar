@@ -14,21 +14,11 @@ namespace Proyecto.GUI.Controllers
     public class ClienteController : Controller
     {
 
-
-
         ICliente clien;//se usan los de DAL
 
         public ClienteController()
         {
             clien = new MCliente();
-        }
-
-        ICliente cliente;
-
-        public ClienteController()
-        {
-            cliente = new MCliente();
-
         }
 
         // GET: Cliente
@@ -37,8 +27,6 @@ namespace Proyecto.GUI.Controllers
 
             return View();
         }
-
-
 
 
         public ActionResult Login()
@@ -73,7 +61,7 @@ namespace Proyecto.GUI.Controllers
         // GET: Cliente/Details/5
         public ActionResult Details(int id)
         {
-            var vCliente = cliente.BuscarCliente(id);
+            var vCliente = clien.BuscarCliente(id);
             var clienteMostrar = Mapper.Map<Models.Cliente>(vCliente);
             return View(clienteMostrar);
         }
@@ -111,14 +99,14 @@ namespace Proyecto.GUI.Controllers
         public ActionResult RecobrarPassword()
         {
 
-     
+
 
 
             return View();
 
         }
 
-        public ActionResult EnviarClave(Cliente pCliente)
+        public ActionResult EnviarClave(Models.Cliente pCliente)
         {
             if (pCliente != null && !string.IsNullOrEmpty(pCliente.Correo))
             {
@@ -140,8 +128,8 @@ namespace Proyecto.GUI.Controllers
             return View("RecobrarPassword");
         }
 
-    }
-}
+
+
 
         // POST: Cliente/Create
         [HttpPost]
@@ -152,7 +140,7 @@ namespace Proyecto.GUI.Controllers
                 if (ModelState.IsValid)
                 {
                     var clienteInsertar = Mapper.Map<DATOS.Cliente>(pCliente);
-                    cliente.InsertarCliente(clienteInsertar);
+                    clien.InsertarCliente(clienteInsertar);
                     return RedirectToAction("Index");
                 }
                 else
@@ -169,7 +157,7 @@ namespace Proyecto.GUI.Controllers
         // GET: Cliente/Edit/5
         public ActionResult Edit(int id)
         {
-            var vCliente = cliente.BuscarCliente(id);
+            var vCliente = clien.BuscarCliente(id);
             var clienteMostrar = Mapper.Map<Models.Cliente>(vCliente);
             return View(clienteMostrar);
         }
@@ -183,13 +171,14 @@ namespace Proyecto.GUI.Controllers
                 if (ModelState.IsValid)
                 {
                     var clienteModificar = Mapper.Map<DATOS.Cliente>(pCliente);
-                    cliente.ActualizarCliente(clienteModificar);
+                    clien.ActualizarCliente(clienteModificar);
                     return RedirectToAction("Index");
-                } else
+                }
+                else
                 {
                     return View();
                 }
-                
+
             }
             catch
             {
@@ -200,9 +189,11 @@ namespace Proyecto.GUI.Controllers
         // GET: Cliente/Delete/5
         public ActionResult Delete(int id)
         {
-            cliente.EliminarCliente(id);
+            clien.EliminarCliente(id);
             return RedirectToAction("Index");
         }
     }
 }
 
+
+    
