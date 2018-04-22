@@ -2,14 +2,17 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @{
+        var usuario = System.Web.HttpContext.Current.Session["cliente"] as String;
+    }
 </head>
 <body>
-    <img src="http://hdwallpapersbackgrounds.us/backgrounds-image/wallpapers-hd-4s-1920x1080/hd-wallpapers-desktop-3078ki2qq-4s-1920x1080.jpg" 
-         style="position:fixed; width:101%; height:93.7%; z-index:-1; opacity: 1;"/>
+    <img src="http://hdwallpapersbackgrounds.us/backgrounds-image/wallpapers-hd-4s-1920x1080/hd-wallpapers-desktop-3078ki2qq-4s-1920x1080.jpg"
+         style="position:fixed; width:101%; height:93.7%; z-index:-1; opacity: 1;" />
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -23,14 +26,15 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Seleccionar Fechas", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Perfil","metodo","conotrolador")</li>
+                    <li>@Html.ActionLink("Perfil", "metodo", "conotrolador")</li>
+                    <li>@Html.ActionLink("Cerrar Sesion", "CerrarS", "Cliente")</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        
+
     </div>
 
     @Scripts.Render("~/bundles/jquery")

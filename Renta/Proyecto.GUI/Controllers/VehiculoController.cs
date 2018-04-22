@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Proyecto.DAL.Interfaces;
-using Proyecto.DAL.Metodos;
+using Proyecto.BLL.Interfaces;
+using Proyecto.BLL.Metodos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +38,7 @@ namespace Proyecto.GUI.Controllers
 
             return View();
         }
-        
+
         public ActionResult VerDisponibles(string fechaEntr, string fechaDev)
         {
             try
@@ -83,20 +83,11 @@ namespace Proyecto.GUI.Controllers
                 {
                     return RedirectToAction("IndexError", "Home");
                 }
-            } catch (Exception e)
-            {
-                return RedirectToAction("IndexError", "Home", new { mensaje = e.Message});
-
             }
-            
+            catch (Exception e)
+            {
+                return RedirectToAction("IndexError", "Home");
+            }
         }
-
-        // GET: Cliente/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        
     }
 }

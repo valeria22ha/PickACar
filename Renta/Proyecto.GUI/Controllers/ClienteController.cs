@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using AutoMapper;
+using Proyecto.GUI.Models;
 using Proyecto.DATOS;
 using Proyecto.DAL.Interfaces;
 using Proyecto.DAL.Metodos;
-using Proyecto.GUI.Models;
 
 namespace Proyecto.GUI.Controllers
 {
@@ -24,10 +24,8 @@ namespace Proyecto.GUI.Controllers
         // GET: Cliente
         public ActionResult Index()
         {
-
             return View();
         }
-
 
         public ActionResult Login()
         {
@@ -40,39 +38,21 @@ namespace Proyecto.GUI.Controllers
             var a = GUI.Models.Cliente.VerficarLogin(pCliente);
             if (a)
             {
-                //Setiar variables de usuario.
-                return new RedirectResult("\\");
-
+                System.Web.HttpContext.Current.Session["cliente"] = pCliente.Correo;
+                return RedirectToAction("index", "home");
             }
             else
             {
-
                 ViewBag.ValMessages = "Usuario o contraseña incorrecto.";
                 return View("Login");
             }
 
         }
 
-        //    var listaClientes = cliente.ListarClientes();
-        //    var clientes = Mapper.Map<List<Models.Cliente>>(listaClientes);
-        //    return View(clientes);
-        //}
-
-        // GET: Cliente/Details/5
-        public ActionResult Details(int id)
-        {
-            var vCliente = clien.BuscarCliente(id);
-            var clienteMostrar = Mapper.Map<Models.Cliente>(vCliente);
-            return View(clienteMostrar);
-        }
-
-        // GET: Cliente/Create
-
         public ActionResult Create()
         {
             return View();
         }
-
 
         [HttpPost]
         public ActionResult Create(Models.Cliente cliente)
@@ -96,22 +76,47 @@ namespace Proyecto.GUI.Controllers
 
         }
 
-        public ActionResult RecobrarPassword()
+
+        public ActionResult Details(int id)
         {
+            var clienteBuscar = clien.BuscarCliente(id);
+            var clienteMostrar = Mapper.Map<Models.Cliente>(clienteBuscar);
+            return View(clienteMostrar);
 
+        }
 
+        public ActionResult Edit(int id)
+        {
+            var clienteBuscar = clien.BuscarCliente(id);
+            var clienteMostrar = Mapper.Map<Models.Cliente>(clienteBuscar);
+            return View(clienteMostrar);
+        }
 
+        [HttpPost]
+        public ActionResult Edit(Models.Cliente cliente)
+        {
+            var clienteModificar = Mapper.Map<DATOS.Cliente>(cliente);
+            if (ModelState.IsValid)
+            {
+                clien.ActualizarCliente(clienteModificar);
+                return RedirectToAction("Login");
+            }
+            return View(cliente);
+        }
 
-            return View();
-
+        public ActionResult Delete(int id)
+        {
+            clien.EliminarCliente(id);
+            return RedirectToAction("Login");
         }
 
         public ActionResult EnviarClave(Models.Cliente pCliente)
         {
             if (pCliente != null && !string.IsNullOrEmpty(pCliente.Correo))
             {
-                MCliente clien = new MCliente();
-                var resultado = clien.RecuperarPassword(pCliente.Correo);
+                BLL.Metodos.MCliente client = new BLL.Metodos.MCliente();
+                var resultado = client.RecuperarPassword(pCliente.Correo);
+
                 if (resultado)
                 {
                     ViewBag.ValMessages = "Correo se ha enviado";
@@ -128,72 +133,10 @@ namespace Proyecto.GUI.Controllers
             return View("RecobrarPassword");
         }
 
-
-
-
-        // POST: Cliente/Create
-        [HttpPost]
-        public ActionResult Create(Models.Cliente pCliente)
+        public ActionResult CerrarS()
         {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    var clienteInsertar = Mapper.Map<DATOS.Cliente>(pCliente);
-                    clien.InsertarCliente(clienteInsertar);
-                    return RedirectToAction("Index");
-                }
-                else
-                {
-                    return View();
-                }
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Cliente/Edit/5
-        public ActionResult Edit(int id)
-        {
-            var vCliente = clien.BuscarCliente(id);
-            var clienteMostrar = Mapper.Map<Models.Cliente>(vCliente);
-            return View(clienteMostrar);
-        }
-
-        // POST: Cliente/Edit/5
-        [HttpPost]
-        public ActionResult Edit(Models.Cliente pCliente)
-        {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    var clienteModificar = Mapper.Map<DATOS.Cliente>(pCliente);
-                    clien.ActualizarCliente(clienteModificar);
-                    return RedirectToAction("Index");
-                }
-                else
-                {
-                    return View();
-                }
-
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Cliente/Delete/5
-        public ActionResult Delete(int id)
-        {
-            clien.EliminarCliente(id);
-            return RedirectToAction("Index");
+            Session.Abandon();
+            return RedirectToAction("Login", "Cliente");
         }
     }
 }
-
-
-    

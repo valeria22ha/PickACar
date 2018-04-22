@@ -84,8 +84,9 @@ namespace Proyecto.GUI.Controllers
             try
             {
 
-                if (ModelState.IsValid) {
-                    
+                if (ModelState.IsValid)
+                {
+
                     var vehiculo = new Vehiculo()
                     {
                         ID = addVehicule.ID,
@@ -97,7 +98,8 @@ namespace Proyecto.GUI.Controllers
                     var vehiculoInsertar = Mapper.Map<DATOS.Vehiculo>(vehiculo);
                     veh.InsertarVehiculo(vehiculoInsertar);
                     return RedirectToAction("Index");
-                } else
+                }
+                else
                 {
                     return View();
                 }
@@ -128,11 +130,12 @@ namespace Proyecto.GUI.Controllers
                 vVehiculo.Proveedores = mProveedores;
 
                 return View(vVehiculo);
-            } catch
+            }
+            catch
             {
                 return RedirectToAction("Index");
             }
-            
+
         }
 
         // POST: AddVehicule/Edit/5
