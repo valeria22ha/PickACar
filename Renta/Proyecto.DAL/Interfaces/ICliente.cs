@@ -26,5 +26,7 @@ namespace Proyecto.DAL.Interfaces
 
         string ObtenerPasswordCliente(string pEmail);
 
+        int ObtenerCedula(string email);
+
     }
 }

@@ -9,6 +9,6 @@ namespace Proyecto.GUI.Models
     public class Estilo
     {
         public int ID { get; set; }
-        public string tipoEstilo { get; set; }
+        public string Descripcion { get; set; }
     }
 }

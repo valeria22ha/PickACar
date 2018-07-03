@@ -1,0 +1,9 @@
+﻿
+#container {
+    background-image: url("'~/Content/hd-wallpapers-desktop-3078ki2qq-4s-1920x1080 (1).jpg'");
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-content: center;
+    margin-top: 5%;
+    padding: 30px;
+}

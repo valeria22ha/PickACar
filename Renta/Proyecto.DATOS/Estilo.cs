@@ -11,6 +11,6 @@ namespace Proyecto.DATOS
     {
         [AutoIncrement]
         public int ID { get; set; }
-        public string tipoEstilo { get; set; }
+        public string Descripcion { get; set; }
     }
 }

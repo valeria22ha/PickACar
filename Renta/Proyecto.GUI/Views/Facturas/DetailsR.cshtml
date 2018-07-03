@@ -1,0 +1,41 @@
+﻿@model Proyecto.GUI.Models.Renta
+
+@{
+    ViewBag.Title = "DetailsR";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div>
+    <br />
+    <h4>Detalles de Renta</h4>
+    <hr />
+    <br />
+    <div cls></div>
+    <dl class="d-lg-block">
+        <dt>
+            Placa del Vehículo
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IDVehiculo)
+        </dd>
+
+        <dt>
+            Fecha de Entrega
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaEntrega)
+        </dd>
+
+        <dt>
+            Fecha de Devolución
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDevolucion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

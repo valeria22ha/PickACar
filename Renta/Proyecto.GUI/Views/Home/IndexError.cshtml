@@ -1,28 +1,27 @@
 ﻿@{
     ViewBag.Title = "Home Page";
-    string mensaje = ViewData["mensaje"] as string;
 }
 <style>
 </style>
 
 <div style="position: absolute; width: 40%; height: 43%; left: 30%; top: 25%; background-color: rgba(0, 0, 0,0.6); border-radius: 10%;">
     <br />
-    <h2 style="color:white; text-align:center;"> Renta el auto que necesites!</h2>
+    <h2 style="color:white; text-align:center;"> ¡Renta el auto que necesites!</h2>
     @using (Html.BeginForm("VerDisponibles", "Vehiculo", FormMethod.Post))
     {
-    <div style="position: absolute; left: 10%; top: 25%;">
-        <h3 style="color:white; text-align:center; font-size: 30px;">Inicio</h3>
-        <input type="date" class="form-control" id="fechaEntr" name="fechaEntr">
-    </div>
-    <div style="position: absolute; left: 70%; top: 25%;">
-        <h3 style="color:white; text-align:center; font-size: 30px;">Fin</h3>
-        <input type="date" class="form-control" id="fechaDev" name="fechaDev">
-    </div>
-    <div style="position: absolute; left: 40%; top: 60%;">
-        <input type="submit" value="Buscar" style="border:0px; background-color: rgb(255,43,4); color:white;
-                                                        font-size:30px; padding:15px 25px; border-radius:10px;" />
-    </div>
-    <br />
+        <div style="position: absolute; left: 10%; top: 25%;">
+            <h3 style="color:white; text-align:center; font-size: 30px;">Inicio</h3>
+            <input type="date" class="form-control" id="fechaEntr" name="fechaEntr">
+        </div>
+        <div style="position: absolute; left: 70%; top: 25%;">
+            <h3 style="color:white; text-align:center; font-size: 30px;">Fin</h3>
+            <input type="date" class="form-control" id="fechaDev" name="fechaDev">
+        </div>
+        <div style="position: absolute; left: 40%; top: 57%;">
+            <input type="submit" value="Buscar" style="border:0px; background-color: rgb(204,183,42); color:white;
+                                                            font-size:30px; padding:15px 25px; border-radius:10px;" />
+        </div>
+        <br />
     }
-    <h2 style="color:white; position:absolute; top:80%; left:20%;">Ingresa fechas validas! @mensaje</h2>
+    <h2 style="color:white; position:absolute; top:83%; left:30%;">¡Ingresa fechas validas!</h2>
 </div>

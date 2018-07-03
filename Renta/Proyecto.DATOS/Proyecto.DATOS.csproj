@@ -65,10 +65,8 @@
   <ItemGroup>
     <Compile Include="Cliente.cs" />
     <Compile Include="Combustible.cs" />
-    <Compile Include="Empleado.cs" />
     <Compile Include="Estilo.cs" />
     <Compile Include="Factura.cs" />
-    <Compile Include="LugarEntregaC.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Mecanico.cs" />
     <Compile Include="Modelo.cs" />
@@ -76,7 +74,6 @@
     <Compile Include="Proveedor.cs" />
     <Compile Include="Puertas.cs" />
     <Compile Include="Renta.cs" />
-    <Compile Include="Seguro.cs" />
     <Compile Include="Traccion.cs" />
     <Compile Include="Transmicion.cs" />
     <Compile Include="Vehiculo.cs" />

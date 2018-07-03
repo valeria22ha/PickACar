@@ -39,7 +39,17 @@ namespace Proyecto.GUI.Controllers
             if (a)
             {
                 System.Web.HttpContext.Current.Session["cliente"] = pCliente.Correo;
-                return RedirectToAction("index","home");
+                var cli = clien.ObtenerCedula((string)Session["cliente"]);
+                var cliente = clien.BuscarCliente(cli);
+                if (!cliente.Tipo)
+                {
+                    return RedirectToAction("index", "home");
+
+                }
+                else
+                {
+                    return RedirectToAction("index", "Facturas");
+                }
             }
             else
             {
@@ -69,7 +79,15 @@ namespace Proyecto.GUI.Controllers
                 clienteInsertar.Telefono = cliente.Telefono;
                 clienteInsertar.Tipo = false;
 
-                clien.InsertarCliente(clienteInsertar);
+                try
+                {
+                    clien.InsertarCliente(clienteInsertar);
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.ValMessages = "La cedula ya existe en nuestros registros.";
+                    return RedirectToAction("Create");
+                }
                 return RedirectToAction("Login");
             }
             return View("Login");
@@ -99,7 +117,7 @@ namespace Proyecto.GUI.Controllers
             if (ModelState.IsValid)
             {
                 clien.ActualizarCliente(clienteModificar);
-                return RedirectToAction("Login");
+                return RedirectToAction("MostrarUsuarios");
             }
             return View(cliente);
         }
@@ -107,7 +125,7 @@ namespace Proyecto.GUI.Controllers
         public ActionResult Delete(int id)
         {
             clien.EliminarCliente(id);
-            return RedirectToAction("Login");
+            return RedirectToAction("MostrarUsuarios");
         }
 
         public ActionResult EnviarClave(Models.Cliente pCliente)
@@ -124,7 +142,7 @@ namespace Proyecto.GUI.Controllers
                 }
                 else
                 {
-                    ViewBag.ValMessages = "No se pudo enviar un correo";
+                    ViewBag.ValMessages = "No se puede registrar Cedula ya existe";
                     return View("RecobrarPassword");
                 }
 
@@ -137,6 +155,13 @@ namespace Proyecto.GUI.Controllers
         {
             Session.Abandon();
             return RedirectToAction("Login","Cliente");
+        }
+
+        public ActionResult MostrarUsuarios()
+        {
+            var clientes = clien.ListarClientes();
+            var clientesMostrar = Mapper.Map<List<Models.Cliente>>(clientes);
+            return View(clientesMostrar);
         }
     }
 }

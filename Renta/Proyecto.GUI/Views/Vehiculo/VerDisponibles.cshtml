@@ -62,26 +62,39 @@
     }
 
     string estilo = "position: absolute; width: 75%; left: 12.5%; height:" + listaDisponibles.Count / 3 * 310 + "px";
-}
 
-<div style="position:fixed; width:100%; height:100%; left:0%; background-color:rgba(0, 0, 0,0.4); z-index:-1;"></div>
-
-<h2 style="color:white;">Carros que puedes rentar:</h2>
-<h4 style="color:white;">Esto dado que escogiste las fechas de entrega: @fechaEntr y de devolucion: @fechaDev</h4>
-<br />
-
-<div style="@estilo">
-    @foreach (var modelo in listaDisponibles)
+    if (listaDisponibles.Count == 0)
     {
-        <div style="float: left; width:33%; height:300px; background-color: rgba(0, 0, 0,0.6);margin-right:10px;">
-            <h3 style="text-align:center; color: white;"><b>@modelo.Descripcion</b></h3>
-            <img src="@modelo.Imagen" style="position:relative; width:70%; height: 60%; left:15%; " />
-            <div style="position:relative; top:2.5%; left:35%;">
-                @Html.ActionLink("Ver detalles", "DetallesRenta", "Renta", new
-                { idModelo = modelo.ID, idCliente = 1, fechaEntr = fechaEntr, fechaDev = fechaDev },
-                                          htmlAttributes: new { @class = "btn btn-info btn-lg" })
-            </div>
-            <br />
+        <div style="position: absolute; width: 40%; height: 43%; left: 30%; top: 25%;
+background-color: rgba(0, 0, 0,0.6); border-radius: 10%; color:white; text-align:center;">
+            <br /><br /><br /><br /><br />
+            <h2>No tenemos vehículos disponibles para estas fechas</h2>
+            <br /><br />
+            @Html.ActionLink("Seleccionar fechas nuevamente", "Index", "Home",null, new { @class = "btn btn-info btn-lg" })
         </div>
     }
-</div>
+    else
+    {
+        <div style="position:fixed; width:100%; height:100%; left:0%; background-color:rgba(0, 0, 0,0.4); z-index:-1;"></div>
+
+        <h2 style="color:white;">Carros que puedes rentar:</h2>
+        <h4 style="color:white;">Esto dado que escogiste las fechas de entrega: @fechaEntr y de devolucion: @fechaDev</h4>
+        <br />
+
+        <div style="@estilo">
+            @foreach (var modelo in listaDisponibles)
+            {
+                <div style="float: left; width:33%; height:300px; background-color: rgba(0, 0, 0,0.6);margin-right:10px;">
+                    <h3 style="text-align:center; color: white;"><b>@modelo.Descripcion</b></h3>
+                    <img src="@modelo.Imagen" style="position:relative; width:70%; height: 60%; left:15%; " />
+                    <div style="position:relative; top:2.5%; left:35%;">
+                        @Html.ActionLink("Ver detalles", "DetallesRenta", "Renta", new
+                        { idModelo = modelo.ID, idCliente = 1, fechaEntr = fechaEntr, fechaDev = fechaDev },
+                                                                        htmlAttributes: new { @class = "btn btn-info btn-lg" })
+                    </div>
+                    <br />
+                </div>
+            }
+        </div>
+    }
+}

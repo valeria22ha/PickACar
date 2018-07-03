@@ -36,3 +36,14 @@ C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
 C:\Users\Leonardo Brenes\Desktop\proyecto progra V con juanes\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll.config
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.dll
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\bin\Debug\Proyecto.DAL.pdb
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.dll
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\bin\Debug\Proyecto.DATOS.pdb
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.csproj.CopyComplete
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.dll
+C:\Users\Leonardo Brenes\Desktop\proyecto progra V\Renta\Proyecto.DAL\obj\Debug\Proyecto.DAL.pdb

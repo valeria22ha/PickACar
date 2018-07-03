@@ -60,36 +60,22 @@ namespace Proyecto.BLL.Metodos
             {
                 if (!string.IsNullOrEmpty(resultado))
                 {
-                    //       SmtpClient client = new SmtpClient()
-                    //       {
-                    //           Credentials = new NetworkCredential("juanesqcr@gmail.com", "")
-                    //       };
-                    //       client.Port = 587;
-                    //       client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    ////        client.UseDefaultCredentials = false;
-                    //       client.Host = "smtp.gmail.com";
-                    //       MailMessage mail = new MailMessage("juanesqcr@gmail.com", pCorreo);
 
-                    //       mail.Subject = "Recuperacion de Contraseña";
-                    //       mail.Body = "Su contraseña es: " + resultado;
-                    //       client.Send(mail);
-                    //       return true;
-
-                    var from = "juanesqcr@gmail.com";
-
-                    MailMessage m = new MailMessage( from, pCorreo);
+                    var from = "correo@gmail.com";
+                    MailMessage m = new MailMessage(from, pCorreo);
                     m.Subject = "Recuperacion de Contraseña";
-                    m.Body = "Su contraseña es: " + resultado; 
+                    m.Body = "Su contraseña es: " + resultado;
                     m.IsBodyHtml = true;
                     m.From = new MailAddress(from);
-
                     m.To.Add(new MailAddress(pCorreo));
-                    SmtpClient smtp = new SmtpClient();
-                    smtp.Host = "smtp.gmail.com";
-
-                    NetworkCredential authinfo = new NetworkCredential("juanesqcr@gmail.com", "asa"/*Aqui va la contrasena*/);
-                    smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = authinfo;
+                    SmtpClient smtp = new SmtpClient()
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        UseDefaultCredentials = false,
+                        Credentials = new NetworkCredential("correo@gmail.com", "contrase;a"),
+                        EnableSsl = true
+                    };
                     smtp.Send(m);
                     return true;
                 }
@@ -110,7 +96,10 @@ namespace Proyecto.BLL.Metodos
             return clie.ListarClientes();
         }
 
-
+        public int ObtenerCedula(string email)
+        {
+            return clie.ObtenerCedula(email);
+        }
     }
 }
 

@@ -13,8 +13,7 @@ using ServiceStack.OrmLite;
 namespace Proyecto.DAL.Metodos
 {
     public class MCliente : MBase, ICliente
-    {
-
+    { 
         List<Cliente> ICliente.ListarClientes()
         {
             return _db.Select<Cliente>();
@@ -27,10 +26,8 @@ namespace Proyecto.DAL.Metodos
         }
 
         void ICliente.InsertarCliente(Cliente cliente)
-        {
-
+        {   
             _db.Insert(cliente);
-
         }
 
         void ICliente.ActualizarCliente(Cliente cliente)
@@ -49,7 +46,6 @@ namespace Proyecto.DAL.Metodos
             var client = _db.Select<Cliente>(a => a.Correo == pLoginUser && a.Password == pPassword).FirstOrDefault();
          
             return client;
-
         }
 
 
@@ -61,12 +57,9 @@ namespace Proyecto.DAL.Metodos
             {
                 //TODO: Desencriptar contraseña
                 return lvCliente.Password;
-                     
-
             }
             else
                 return string.Empty;
-
 
         }
 
@@ -90,6 +83,19 @@ namespace Proyecto.DAL.Metodos
                 return false;
 
 
+        }
+
+        public int ObtenerCedula(string email)
+        {
+            var clie = _db.Select<Cliente>(x => x.Correo == email).FirstOrDefault();
+            if (clie != null)
+            {
+                return clie.Cedula;
+            }
+            else
+            {
+                return -1;
+            }
         }
     }
 }

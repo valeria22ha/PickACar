@@ -12,10 +12,12 @@ namespace Proyecto.GUI.Controllers
     public class FacturasController : Controller
     {
         IFactura Factura;
+        IRenta rent;
 
         public FacturasController()
         {
             Factura = new MFactura();
+            rent = new MRenta();
         }
 
         // GET: Factura
@@ -93,6 +95,13 @@ namespace Proyecto.GUI.Controllers
             {
                 return View();
             }
+        }
+
+        public ActionResult DetailsR(int idRenta)
+        {
+            var renta = rent.BuscarRenta(idRenta);
+            var rentaMostrar = Mapper.Map<Models.Renta>(renta);
+            return View(rentaMostrar);
         }
     }
 }

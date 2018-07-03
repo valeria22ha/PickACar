@@ -2,7 +2,18 @@
     ViewBag.Title = "RegistroRenta";
 }
 
-<h2>RegistroRenta</h2>
-
-<h3>Exito!</h3>
-
+<div style="position: absolute; width: 40%; height: 40%; left: 30%; top: 25%;
+background-color: rgba(0, 0, 0,0.6); border-radius: 10%; color:white;">
+    <br />
+    <h2 style="text-align:center;">¡Renta Registrada Exitosamente!</h2>
+    <div style="position:absolute; width:90%; left:5%; top:30%;">
+        <h4 style="text-align:justify;">
+            Se te ha enviado un correo electronico con información sobre la renta realizada,
+            favor no eliminar dicho correo puesto a que funciona como comprobante.
+        </h4>
+    </div>
+    <br />
+    <div style="position:absolute; top:70%; left:36%">
+        @Html.ActionLink("Realizar otra renta", "Index", "Home", null, new { @class = "btn btn-info btn-lg" })
+    </div>
+</div>

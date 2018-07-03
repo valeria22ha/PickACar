@@ -17,19 +17,13 @@ namespace Proyecto.GUI
 
                 cfg.CreateMap< Proyecto.GUI.Models.Combustible, Proyecto.DATOS.Combustible>();
                 cfg.CreateMap< Proyecto.DATOS.Combustible, Proyecto.GUI.Models.Combustible>();
-
-                cfg.CreateMap< Proyecto.GUI.Models.Empleado, Proyecto.DATOS.Empleado>();
-                cfg.CreateMap< Proyecto.DATOS.Empleado,  Proyecto.GUI.Models.Empleado>();
-
+                
                 cfg.CreateMap< Proyecto.GUI.Models.Estilo, Proyecto.DATOS.Estilo>();
                 cfg.CreateMap< Proyecto.DATOS.Estilo,  Proyecto.GUI.Models.Estilo>();
 
                 cfg.CreateMap< Proyecto.GUI.Models.Factura, Proyecto.DATOS.Factura>();
                 cfg.CreateMap< Proyecto.DATOS.Factura,  Proyecto.GUI.Models.Factura>();
-
-                cfg.CreateMap< Proyecto.GUI.Models.LugarEntregaC, Proyecto.DATOS.LugarEntregaC>();
-                cfg.CreateMap< Proyecto.DATOS.LugarEntregaC,  Proyecto.GUI.Models.LugarEntregaC>();
-
+                
                 cfg.CreateMap< Proyecto.GUI.Models.Marca, Proyecto.DATOS.Marca>();
                 cfg.CreateMap< Proyecto.DATOS.Marca,  Proyecto.GUI.Models.Marca>();
 
@@ -44,10 +38,7 @@ namespace Proyecto.GUI
 
                 cfg.CreateMap< Proyecto.GUI.Models.Puertas, Proyecto.DATOS.Puertas>();
                 cfg.CreateMap< Proyecto.DATOS.Puertas, Proyecto.GUI.Models.Puertas>();
-
-                cfg.CreateMap< Proyecto.GUI.Models.Seguro, Proyecto.DATOS.Seguro>();
-                cfg.CreateMap< Proyecto.DATOS.Seguro,  Proyecto.GUI.Models.Seguro>();
-
+                
                 cfg.CreateMap< Proyecto.GUI.Models.Traccion, Proyecto.DATOS.Traccion>();
                 cfg.CreateMap< Proyecto.DATOS.Traccion,  Proyecto.GUI.Models.Traccion>();
 
